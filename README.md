@@ -1,2 +1,3 @@
 # Wolf-of-Mauer-Park
-A rough approach of prediction for forex.
+A rough approach of Forex prediction.
+
