@@ -3,7 +3,7 @@ import os
 import pandas as pd
 
 
-def get_csv_files_dict():
+def _get_csv_files_dict():
     files_dict = {}
     files = [filo for filo in os.listdir("data") if ".csv" in filo]
     for file in files:
@@ -13,7 +13,7 @@ def get_csv_files_dict():
     return files_dict
 
 
-def read_chunk(file_path, chunksize=1000000, resample=None):
+def _read_chunk(file_path, chunksize=1000000, resample=None):
     print file_path
     chunks = pd.read_csv("data/" + file_path,
                          parse_dates=['Time (UTC)'], chunksize=chunksize)
@@ -30,13 +30,13 @@ def read_chunk(file_path, chunksize=1000000, resample=None):
     df.to_csv('data/resampled/' + file_path)
 
 
-def create_files(resample=None):
-    files_dict = get_csv_files_dict()
+def _create_files(resample=None):
+    files_dict = _get_csv_files_dict()
     for file_name, file_path in files_dict.iteritems():
-        read_chunk(file_path=file_path, resample=resample)
+        _read_chunk(file_path=file_path, resample=resample)
 
 
-def combine_files(resample=None):
+def _combine_files(resample=None):
     onlyfiles = [f for f in os.listdir(
         'data/resampled/') if os.path.isfile(os.path.join('data/resampled/', f))]
     onlyfiles = [filo for filo in onlyfiles if ".csv" in filo]
@@ -57,7 +57,7 @@ def combine_files(resample=None):
     return df_all
 
 
-def add_calendar_data(df):
+def _add_calendar_data(df):
     df['cal_hour'] = df.Time.dt.hour
     df['cal_minute'] = df.Time.dt.minute
     df['cal_dayofweek'] = df.Time.dt.dayofweek
@@ -65,21 +65,27 @@ def add_calendar_data(df):
     df.rename(columns={'Time': 'cal_time'}, inplace=True)
 
 
-def regularize(df):
+def _regularize(df):
     reg_col = [col for col in df.columns.tolist() if not "cal_" in col]
     for col in reg_col:
         df[col + "_reg"] = (df[col] - df[col].mean()) / df[col].std()
 
 
-def create_raw_data(sample_period='1Min'):
+def _remove_null(df):
+    index_names = _get_csv_files_dict().keys()
+    for index in index_names:
+        df = df[pd.notnull(df['Ask_' + index])]
 
-    # create_files(resample=sample_period)
-    df = combine_files(resample=sample_period)
+    return df
+
+
+def create_raw_data(sample_period='1Min', create=False):
+    if create:
+        _create_files(resample=sample_period)
+    df = _combine_files(resample=sample_period)
     df.to_csv('data/merged/raw.csv', sep=';')
-    add_calendar_data(df)
-    regularize(df)
-    df = df[pd.notnull(df.Ask_EURGBP)]
-    df = df[pd.notnull(df.Ask_GBPUSD)]
-    df = df[pd.notnull(df.Ask_EURUSD)]
+    _add_calendar_data(df)
+    df = _remove_null(df)
+    _regularize(df)
 
     df.to_csv('data/merged/regularized.csv', sep=';')
