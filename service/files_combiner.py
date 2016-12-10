@@ -1,6 +1,6 @@
 import os
-
 import pandas as pd
+import logging
 
 
 def _get_csv_files_dict():
@@ -15,18 +15,23 @@ def _get_csv_files_dict():
 
 def _read_chunk(file_path, chunksize=1000000, resample=None):
     print file_path
+
     chunks = pd.read_csv("data/" + file_path,
                          parse_dates=['Time (UTC)'], chunksize=chunksize)
     df = pd.DataFrame()
-    for _ in chunks:
-        _.rename(columns={'Time (UTC)': 'Time'}, inplace=True)
-        _.rename(columns={'BidVolume ': 'BidVolume'}, inplace=True)
-        _.set_index('Time', inplace=True)
+    print "Finished reading file"
+    for i, _ in enumerate(chunks):
+        print i
+        _ = _.rename(columns={'Time (UTC)': 'Time'})
+        _ = _.rename(columns={'BidVolume ': 'BidVolume'})
+        _ = _.set_index('Time')
         _ = _.resample(resample).mean()
         _['spread'] = _['Ask'] - _['Bid']
         _['spread_volume'] = _['AskVolume'] - _['BidVolume']
+
         df = pd.concat([df, _], axis=0)
 
+    print "Finished chunk :" + file_path
     df.to_csv('data/resampled/' + file_path)
 
 
@@ -79,9 +84,31 @@ def _remove_null(df):
     return df
 
 
+def reformat_csv(file_name):
+    """Fix wrongly formatted csv file
+    """
+    df_all = pd.DataFrame()
+    chunks = pd.read_csv('data/NOK/' + file_name,
+                         skiprows=[0], names=['Time (UTC)', 'Ask', 'Bid', 'AskVolume', 'BidVolume '], chunksize=1000000, delim_whitespace=True)
+    print sum(1 for row in open('data/NOK/' + file_name, 'r'))
+    for i, df in enumerate(chunks):
+        print i
+        df = df.reset_index()
+        df['index'] = df['index'].apply(lambda x: '.'.join(x.split('.')[::-1]))
+        df['Time (UTC)'] = df['index'] + " " + df['Time (UTC)']
+        df = df.drop('index', 1)
+
+        df_all = pd.concat([df_all, df], axis=0)
+
+    df_all.to_csv('data/' + 'clean_' + file_name, index=False)
+
+    logging.info("Finished reformatting {}".format(file_name))
+
+
 def create_raw_data(sample_period='1Min', create=False):
     if create:
         _create_files(resample=sample_period)
+    logging.info("Finished creating files")
     df = _combine_files(resample=sample_period)
     df.to_csv('data/merged/raw.csv', sep=';')
     _add_calendar_data(df)

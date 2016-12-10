@@ -16,8 +16,8 @@ class Prediction(object):
         self.interval = interval
 
     def __repr__(self):
-        self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M')+" to "+\
-        self.interval['to'].strftime('%Y-%m-%d %H:%M')
+        self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M') + " to " +\
+            self.interval['to'].strftime('%Y-%m-%d %H:%M')
 
         return "{0.serie_name} : {0.shift} : {0.interval_str} :\
          {0.df.shape[0]}".format(self)
@@ -25,7 +25,7 @@ class Prediction(object):
 
 class Simulator(object):
 
-    def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None, steps=10):
+    def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None, steps=10, fit_model=False):
 
         self.dt_from = dt_from
         self.dt_to = dt_to
@@ -33,6 +33,7 @@ class Simulator(object):
         self.intervals = self._create_intervals()
         self.targets = targets
         self.shift = shift
+        self.fit_model = fit_model
         self.predictions = []
 
     def __repr__(self):

@@ -1,3 +1,24 @@
+'''This module split the data to compute a prediction
+There is one specific features in the process:
+
+The aim is to predict a value for a time serie
+
+Given a dataset with time index:
+ __________________________
+|time_i    | X_i    | y_i  |
+|----------|--------|------|
+|time_i+1  | X_i+1  | y_i+1|
+|----------|--------|------|
+
+
+The trick is to considere the (X_i,y_i+n) as a pair when fitting the model
+where n is the number of periods shifted.
+
+Given X_i at time_i, we can then predict the y_i+n value at time_i+n.
+
+
+'''
+
 import logging
 
 

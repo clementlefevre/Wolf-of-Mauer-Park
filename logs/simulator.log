@@ -41,3 +41,143 @@
 2016-12-09 13:43:28,772 [INFO ]  compute prediction for Ask_GBPUSD : {'to': datetime.datetime(2016, 11, 1, 16, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
 2016-12-09 13:55:21,804 [INFO ]  compute prediction for Ask_GBPUSD : {'to': datetime.datetime(2016, 11, 1, 16, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
 2016-12-09 13:56:06,733 [INFO ]  compute prediction for Ask_GBPUSD : {'to': datetime.datetime(2016, 11, 1, 16, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 20:18:48,234 [ERROR]  Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+
+2016-12-09 20:18:48,272 [ERROR]  Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py", line 414, in _run_callback
+    callback(*args, **kwargs)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 276, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 228, in dispatch_shell
+    handler(stream, idents, msg)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 393, in execute_request
+    sys.stdout.flush()
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/iostream.py", line 269, in flush
+    evt.wait()
+  File "/home/ramon/anaconda2/lib/python2.7/threading.py", line 614, in wait
+    self.__cond.wait(timeout)
+  File "/home/ramon/anaconda2/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+2016-12-09 20:18:48,284 [ERROR]  Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py", line 440, in _handle_events
+    self._handle_recv()
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py", line 472, in _handle_recv
+    self._run_callback(callback, msg)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/zmq/eventloop/zmqstream.py", line 414, in _run_callback
+    callback(*args, **kwargs)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 276, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 228, in dispatch_shell
+    handler(stream, idents, msg)
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/kernelbase.py", line 393, in execute_request
+    sys.stdout.flush()
+  File "/home/ramon/anaconda2/lib/python2.7/site-packages/ipykernel/iostream.py", line 269, in flush
+    evt.wait()
+  File "/home/ramon/anaconda2/lib/python2.7/threading.py", line 614, in wait
+    self.__cond.wait(timeout)
+  File "/home/ramon/anaconda2/lib/python2.7/threading.py", line 340, in wait
+    waiter.acquire()
+KeyboardInterrupt
+2016-12-09 20:28:23,462 [INFO ]  Finished reformatting GBPUSD_UTC_Ticks_Bid_2016.01.01_2016.12.08_NOK.csv
+2016-12-09 20:38:13,411 [INFO ]  Finished reformatting EURUSD_UTC_Ticks_Bid_2016.01.01_2016.12.08_NOK.csv
+2016-12-09 20:45:04,914 [INFO ]  Finished reformatting GBPUSD_UTC_Ticks_Bid_2016.01.01_2016.12.08_NOK.csv
+2016-12-09 20:51:19,580 [INFO ]  Finished reformatting EURGBP_UTC_Ticks_Bid_2016.01.01_2016.12.08_NOK.csv
+2016-12-09 21:01:04,981 [INFO ]  Finished creating files
+2016-12-09 21:03:25,033 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 21:11:18,372 [INFO ]  compute prediction for Ask_EURUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 21:22:54,003 [INFO ]  compute prediction for Ask_GBPUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 21:31:43,502 [INFO ]  compute prediction for Ask_CADCHF : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 21:40:34,934 [INFO ]  compute prediction for Ask_XAGUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 21:52:55,952 [INFO ]  compute prediction for Ask_BRENTCMDUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 22:06:43,393 [INFO ]  compute prediction for Ask_EURCHF : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 22:14:11,940 [INFO ]  compute prediction for Ask_GBPCHF : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-09 22:22:06,698 [INFO ]  compute prediction for Ask_CHFSGD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 10:03:08,852 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 10:07:22,212 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 10:19:54,068 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 10:39:03,939 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 10:46:10,308 [INFO ]  compute prediction for Ask_EURUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 11:15:31,560 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 11:21:56,950 [INFO ]  compute prediction for Ask_EURUSD : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 11:30:13,880 [INFO ]  test took : 882.319933 seconds
+2016-12-10 14:19:53,962 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 14:19:54,180 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 14:19:54,410 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 14:19:54,639 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 14:19:54,883 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 14:19:55,117 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 14:19:55,359 [INFO ]  test took : 1.396284 seconds
+2016-12-10 14:23:21,940 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 14:23:22,149 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 14:23:22,383 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 14:23:22,618 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 14:23:22,854 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 14:23:23,090 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 14:23:23,332 [INFO ]  test took : 1.391827 seconds
+2016-12-10 14:24:08,734 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 14:26:47,538 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 14:34:02,794 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 14:41:29,084 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 14:48:56,511 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 14:56:05,840 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 15:03:08,589 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 15:05:18,865 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:05:19,107 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 15:05:19,341 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 15:05:19,579 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 15:05:19,816 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 15:05:20,058 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 15:05:20,302 [INFO ]  test took : 1.437362 seconds
+2016-12-10 15:09:14,571 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:16:38,684 [INFO ]  test took : 444.11353 seconds
+2016-12-10 15:18:50,029 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:19:24,116 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:19:45,992 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:19:46,139 [INFO ]  test took : 0.147457 seconds
+2016-12-10 15:23:03,686 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:23:03,825 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 15:23:03,982 [INFO ]  test took : 0.295676 seconds
+2016-12-10 15:33:45,623 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:33:45,763 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 15:33:45,916 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 15:33:46,071 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 15:33:46,228 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 15:33:46,385 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 15:33:46,557 [INFO ]  test took : 0.934793 seconds
+2016-12-10 15:57:22,744 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:58:29,197 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 15:59:12,148 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 16:02:01,564 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 16:02:04,680 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 16:02:07,381 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 16:02:08,262 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 16:02:08,663 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 16:02:09,257 [INFO ]  test took : 177.109824 seconds
+2016-12-10 16:02:19,750 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 16:02:19,961 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 16:02:20,184 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 16:02:20,412 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 16:02:20,644 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 16:02:20,869 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 16:02:21,107 [INFO ]  test took : 1.357604 seconds
+2016-12-10 16:06:53,441 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 16:06:53,642 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 16:06:53,870 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 16:06:54,102 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 16:06:54,341 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 16:06:54,579 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-10 16:06:54,827 [INFO ]  test took : 1.38634 seconds
+2016-12-10 16:08:10,107 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 10), 'from': datetime.datetime(2016, 11, 1, 8, 0)}
+2016-12-10 16:14:41,977 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 20), 'from': datetime.datetime(2016, 11, 1, 8, 10)}
+2016-12-10 16:21:26,298 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 30), 'from': datetime.datetime(2016, 11, 1, 8, 20)}
+2016-12-10 16:28:20,524 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
+2016-12-10 16:35:31,782 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
+2016-12-10 16:42:28,124 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}

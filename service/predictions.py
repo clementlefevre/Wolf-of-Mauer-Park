@@ -3,16 +3,17 @@ import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
 import xgboost
+import logging
+import pickle
 from service.train_test import create_dataset
 from model.models import Prediction
-import logging
 
 
 df_merged = pd.read_csv('data/merged/regularized.csv',
                         sep=';', parse_dates=['cal_time'])
 
 
-def xgbooster(dataset):
+def fit(dataset, target, shift):
     #model = xgboost.XGBRegressor()
     model = xgboost.XGBRegressor(max_depth=30,
                                  learning_rate=0.1,
@@ -34,6 +35,14 @@ def xgbooster(dataset):
                                  missing=None)
     model.fit(dataset['training_X'], dataset['training_y'])
 
+    pickle.dump(model, open(
+        "data/predictions/model_{}.p".format(target), "wb"))
+
+
+def predict(dataset, target, shift):
+    model = pickle.load(
+        open("data/predictions/model_{}.p".format(target), "rb"))
+
     predictions = model.predict(dataset['forecast_X'])
 
     prediction_df = pd.DataFrame({'predicted': predictions,
@@ -41,12 +50,17 @@ def xgbooster(dataset):
                                       'observed_y']},
                                  index=dataset['label_forecast'])
 
+    #prediction_df.predicted = prediction_df.predicted.shift(periods=shift)
+
     return prediction_df
 
 
-def make_prediction(df, target, interval, shift):
+def make_prediction(df, target, interval, shift, fit_model=False):
     dataset = create_dataset(df, target, interval, shift)
-    df_prediction = xgbooster(dataset)
+    if fit_model:
+        fit(dataset, target, shift)
+
+    df_prediction = predict(dataset, target, shift)
     return Prediction(df_prediction, target, interval, shift)
 
 
@@ -70,7 +84,7 @@ def compute_and_pickle(simulator):
             logging.info(
                 "compute prediction for {0} : {1}".format(target, interval))
             prediction = make_prediction(
-                df_merged, target, interval, simulator.shift)
+                df_merged, target, interval, simulator.shift, simulator.fit_model)
             simulator.predictions.append(prediction)
 
     pickle.dump(simulator, open("data/predictions/simulator.p", "wb"))
