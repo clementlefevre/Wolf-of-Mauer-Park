@@ -35,9 +35,10 @@ def clean_features(df, target):
         "reg" in col or "cal_" in col)]
 
     # Exclude the target from features
-    features_col = [col for col in features_col if target.split('_')[
-        1] not in col]
-
+    print target
+    features_col = [col for col in features_col if target not in col]
+    for f in features_col:
+        print f
     # Time index is not a feature
     features_col.remove('cal_time')
 

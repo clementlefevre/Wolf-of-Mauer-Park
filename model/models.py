@@ -3,7 +3,7 @@ Given a date, the Factory splits it into several time intervals.
 For each time interval and each target, the Factory compute a prediction.and
 All the prediction are stored as Prediction object."""
 
-from datetime import timedelta
+from datetime import datetime, timedelta
 import pandas as pd
 
 
@@ -27,8 +27,8 @@ class Simulator(object):
 
     def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None, steps=10, fit_model=False):
 
-        self.dt_from = dt_from
-        self.dt_to = dt_to
+        self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
+        self.dt_to = datetime.strptime(dt_to, '%Y-%m-%d %H:%M')
         self.steps = steps
         self.intervals = self._create_intervals()
         self.targets = targets

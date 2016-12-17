@@ -1,20 +1,14 @@
-from datetime import timedelta
 import pickle
 import pandas as pd
 import matplotlib.pyplot as plt
 import xgboost
 import logging
-import pickle
+
 from service.train_test import create_dataset
 from model.models import Prediction
 
 
-df_merged = pd.read_csv('data/merged/regularized.csv',
-                        sep=';', parse_dates=['cal_time'])
-
-
 def fit(dataset, target, shift):
-    #model = xgboost.XGBRegressor()
     model = xgboost.XGBRegressor(max_depth=30,
                                  learning_rate=0.1,
                                  n_estimators=100,
@@ -78,13 +72,17 @@ def plot_predictions(simulator):
             df.plot(ax=axes[j], title=title, lw=1)
 
 
-def compute_and_pickle(simulator):
+def compute_and_pickle(simulator, dataset_path=None):
+
+    df_merged = pd.read_csv(dataset_path,
+                            sep=';', parse_dates=['cal_time'])
     for target in simulator.targets:
         for interval in simulator.intervals:
             logging.info(
                 "compute prediction for {0} : {1}".format(target, interval))
             prediction = make_prediction(
-                df_merged, target, interval, simulator.shift, simulator.fit_model)
+                df_merged, target, interval,
+                simulator.shift, simulator.fit_model)
             simulator.predictions.append(prediction)
 
     pickle.dump(simulator, open("data/predictions/simulator.p", "wb"))

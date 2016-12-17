@@ -181,3 +181,66 @@ KeyboardInterrupt
 2016-12-10 16:28:20,524 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 40), 'from': datetime.datetime(2016, 11, 1, 8, 30)}
 2016-12-10 16:35:31,782 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 8, 50), 'from': datetime.datetime(2016, 11, 1, 8, 40)}
 2016-12-10 16:42:28,124 [INFO ]  compute prediction for Ask_EURGBP : {'to': datetime.datetime(2016, 11, 1, 9, 0), 'from': datetime.datetime(2016, 11, 1, 8, 50)}
+2016-12-16 10:07:40,514 [INFO ]  folder merged created in brent_wti
+2016-12-16 10:08:55,239 [INFO ]  folder ask_bid created in brent_wti
+2016-12-16 14:57:08,064 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 14:57:54,099 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 14:57:54,105 [INFO ]  folder merged created in brent_wti/ask_bid/transformed
+2016-12-16 14:58:53,206 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:02:53,102 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:08:44,471 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:12:33,959 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:16:43,748 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:21:49,650 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:26:10,303 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:31:45,958 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:36:44,198 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed
+2016-12-16 15:52:14,110 [INFO ]  Finished resampling folder : brent_wti/ask_bid/transformed/EURRUB
+2016-12-16 15:52:14,114 [INFO ]  folder merged created in brent_wti/ask_bid/transformed/EURRUB
+2016-12-16 16:27:13,852 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 10), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 16:29:37,497 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 10), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 16:40:49,783 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 20), 'from': datetime.datetime(2016, 12, 1, 8, 10)}
+2016-12-16 16:51:54,152 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 30), 'from': datetime.datetime(2016, 12, 1, 8, 20)}
+2016-12-16 17:03:11,092 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 40), 'from': datetime.datetime(2016, 12, 1, 8, 30)}
+2016-12-16 17:14:18,998 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 50), 'from': datetime.datetime(2016, 12, 1, 8, 40)}
+2016-12-16 17:24:38,939 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 50)}
+2016-12-16 17:35:29,604 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 10), 'from': datetime.datetime(2016, 12, 1, 9, 0)}
+2016-12-16 17:37:05,364 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 10), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 17:51:10,106 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 10), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 17:51:11,090 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 20), 'from': datetime.datetime(2016, 12, 1, 8, 10)}
+2016-12-16 17:51:12,696 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 30), 'from': datetime.datetime(2016, 12, 1, 8, 20)}
+2016-12-16 17:51:14,559 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 40), 'from': datetime.datetime(2016, 12, 1, 8, 30)}
+2016-12-16 17:51:15,833 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 50), 'from': datetime.datetime(2016, 12, 1, 8, 40)}
+2016-12-16 17:51:16,783 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 50)}
+2016-12-16 17:54:03,043 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 10), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 17:54:04,024 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 20), 'from': datetime.datetime(2016, 12, 1, 8, 10)}
+2016-12-16 17:54:05,223 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 30), 'from': datetime.datetime(2016, 12, 1, 8, 20)}
+2016-12-16 17:54:06,936 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 40), 'from': datetime.datetime(2016, 12, 1, 8, 30)}
+2016-12-16 17:54:08,934 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 50), 'from': datetime.datetime(2016, 12, 1, 8, 40)}
+2016-12-16 17:54:10,846 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 50)}
+2016-12-16 17:54:11,861 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 10), 'from': datetime.datetime(2016, 12, 1, 9, 0)}
+2016-12-16 17:54:12,897 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 20), 'from': datetime.datetime(2016, 12, 1, 9, 10)}
+2016-12-16 17:54:14,112 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 30), 'from': datetime.datetime(2016, 12, 1, 9, 20)}
+2016-12-16 17:54:15,594 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 40), 'from': datetime.datetime(2016, 12, 1, 9, 30)}
+2016-12-16 17:54:17,827 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 50), 'from': datetime.datetime(2016, 12, 1, 9, 40)}
+2016-12-16 17:54:19,825 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 10, 0), 'from': datetime.datetime(2016, 12, 1, 9, 50)}
+2016-12-16 17:54:40,013 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 8, 30), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 17:54:41,015 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 30)}
+2016-12-16 17:54:42,034 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 30), 'from': datetime.datetime(2016, 12, 1, 9, 0)}
+2016-12-16 17:54:43,034 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 10, 0), 'from': datetime.datetime(2016, 12, 1, 9, 30)}
+2016-12-16 17:55:56,043 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 17:55:57,026 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 10, 0), 'from': datetime.datetime(2016, 12, 1, 9, 0)}
+2016-12-16 17:55:58,038 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 11, 0), 'from': datetime.datetime(2016, 12, 1, 10, 0)}
+2016-12-16 17:55:59,057 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 12, 0), 'from': datetime.datetime(2016, 12, 1, 11, 0)}
+2016-12-16 17:56:00,194 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 13, 0), 'from': datetime.datetime(2016, 12, 1, 12, 0)}
+2016-12-16 17:56:01,743 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 14, 0), 'from': datetime.datetime(2016, 12, 1, 13, 0)}
+2016-12-16 17:56:02,782 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 15, 0), 'from': datetime.datetime(2016, 12, 1, 14, 0)}
+2016-12-16 17:56:03,698 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 16, 0), 'from': datetime.datetime(2016, 12, 1, 15, 0)}
+2016-12-16 17:56:04,733 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 17, 0), 'from': datetime.datetime(2016, 12, 1, 16, 0)}
+2016-12-16 17:56:05,701 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 18, 0), 'from': datetime.datetime(2016, 12, 1, 17, 0)}
+2016-12-16 17:56:06,736 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 19, 0), 'from': datetime.datetime(2016, 12, 1, 18, 0)}
+2016-12-16 17:56:08,576 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 20, 0), 'from': datetime.datetime(2016, 12, 1, 19, 0)}
+2016-12-16 18:37:47,776 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 18:38:35,682 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 18:40:11,854 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-16 18:42:08,194 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
