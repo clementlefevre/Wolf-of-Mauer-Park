@@ -81,7 +81,7 @@ def _transform(df, resample=None):
     df = df.rename(columns={'Time(UTC)': 'datetime'})
     df2 = df.set_index('datetime')
     df2 = df2.resample(resample).mean()
-    #_add_spread(df2)
+    add_spread(df2)
 
     _add_rolling_mean(df2)
     _add_ewma(df2)
@@ -91,7 +91,7 @@ def _transform(df, resample=None):
 
 def _transform_folder(source_folder=None):
     files = _get_files(folder=source_folder, extension='.csv')
-    path = 'data/' + source_folder + '/'
+    path = source_folder + '/'
     if not os.path.exists(path + 'transformed'):
         os.makedirs(path + 'transformed')
         logging.info("folder resampled created in {}".format(source_folder))
@@ -136,12 +136,12 @@ def _merge_files(source_folder=None, resample=None, filter_on=None):
 
     df_all = pd.DataFrame()
 
-    if not os.path.exists('data/' + source_folder + '/merged'):
-        os.makedirs('data/' + source_folder + '/merged')
+    if not os.path.exists(source_folder + '/merged'):
+        os.makedirs(source_folder + '/merged')
         logging.info("folder merged created in {}".format(source_folder))
     for file in files_to_merge:
 
-        df = pd.read_csv(os.path.join('data/' + source_folder, file),
+        df = pd.read_csv(os.path.join(source_folder, file),
                          parse_dates=['datetime'], index_col=0)
 
         df = _filter_on_columns(df, filter_on)
@@ -235,7 +235,7 @@ def create_dataset(sample_period='1Min', create=False,
                       resample=sample_period, filter_on=filter_on)
 
     _add_calendar_data(df)
-    df.to_csv('data/' + source_folder + '/merged/raw.csv')
+    df.to_csv(source_folder + '/merged/raw.csv')
     df = _remove_null(df, source_folder=source_folder)
     _regularize(df)
 
