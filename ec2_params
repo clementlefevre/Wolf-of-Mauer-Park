@@ -1,0 +1,9 @@
+when restarting instance, ssh -i ~/.ssh/ubuntu_c3x4.pem ubuntu@ec2-35-156-209-66xxxxxxxxx
+
+
+then in the root folder :
+sudo mount /dev/xvdba /drive_ext4
+
+
+do not forget to stop spot request and instance itself.
+
