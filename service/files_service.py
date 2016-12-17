@@ -178,6 +178,13 @@ def _regularize(df):
         df[col + "_reg"] = (df[col] - df[col].mean()) / df[col].std()
 
 
+def _remove_absolute_columns(df):
+    not_absolute_cols = [col for col in df.columns if (
+        'cal_' in col or '_reg' in col)]
+    print not_absolute_cols
+    df = df[not_absolute_cols]
+
+
 def _remove_null(df, source_folder=None):
     index_names = _get_files(
         folder=source_folder, extension='csv')
@@ -226,7 +233,7 @@ def unzip_folder(folder_origin=None, folder_target=None):
 
 
 def create_dataset(sample_period='1Min', create=False,
-                   source_folder=None, file_name=None, filter_on=None):
+                   source_folder=None, file_name=None, filter_on=None, raw_exists=False):
 
     if not os.path.exists(source_folder + '/merged'):
         os.makedirs(source_folder + '/merged')
@@ -237,12 +244,18 @@ def create_dataset(sample_period='1Min', create=False,
         _chunk_and_resample_folder(
             resample=sample_period, source_folder=source_folder)
     logging.info('Finished resampling folder : {}'.format(source_folder))
-    df = _merge_files(source_folder=source_folder,
-                      resample=sample_period, filter_on=filter_on)
 
-    _add_calendar_data(df)
-    df.to_csv(source_folder + '/merged/raw.csv', sep=';')
+    if not raw_exists:
+        df = _merge_files(source_folder=source_folder,
+                          resample=sample_period, filter_on=filter_on)
+
+        _add_calendar_data(df)
+        df.to_csv(source_folder + '/merged/raw.csv', sep=';')
+    else:
+        df = pd.read_csv(source_folder + '/merged/raw.csv', sep=';')
+
     df = _remove_null(df, source_folder=source_folder)
     _regularize(df)
+    _remove_absolute_columns(df)
 
     df.to_csv(source_folder + '/merged/merged.csv', sep=';')
