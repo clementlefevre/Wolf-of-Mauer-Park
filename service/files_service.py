@@ -11,7 +11,7 @@ LAG = 10
 def _get_files(folder=None, extension=None, as_dict=False):
 
     files = [filo for filo in os.listdir(
-        "data/" + folder) if extension in filo]
+        folder) if extension in filo]
 
     if as_dict:
         files_dict = {}
@@ -29,8 +29,8 @@ def merge_ask_bid(source_folder=None):
     files = _get_files(folder=source_folder, extension='.csv')
     files = sorted(files)
 
-    if not os.path.exists('data/' + source_folder + '/ask_bid'):
-        os.makedirs('data/' + source_folder + '/ask_bid')
+    if not os.path.exists(source_folder + '/ask_bid'):
+        os.makedirs(source_folder + '/ask_bid')
         logging.info("folder ask_bid created in {}".format(source_folder))
 
     for i, f in enumerate(files):
@@ -44,13 +44,13 @@ def merge_ask_bid(source_folder=None):
         index_1 = ''.join(['_', files_dict[k][1].split('_')[3]])
         print index_0
 
-        df1 = pd.read_csv('data/' + source_folder + '/' + files_dict[k][0])
-        df2 = pd.read_csv('data/' + source_folder + '/' + files_dict[k][1])
+        df1 = pd.read_csv(source_folder + '/' + files_dict[k][0])
+        df2 = pd.read_csv(source_folder + '/' + files_dict[k][1])
 
         df1 = df1.rename(columns={'Volume_': 'Volume'})
         df2 = df2.rename(columns={'Volume_': 'Volume'})
         df = pd.merge(df1, df2, on='Time (UTC)', suffixes=[index_0, index_1])
-        df.to_csv('data/' + source_folder + '/ask_bid/' + k + '.csv')
+        df.to_csv(source_folder + '/ask_bid/' + k + '.csv')
 
 
 def _chunk_and_resample(file_path, chunksize=1000000, resample=None):
