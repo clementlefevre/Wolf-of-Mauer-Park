@@ -228,7 +228,7 @@ def unzip_folder(folder_origin=None, folder_target=None):
 def create_dataset(sample_period='1Min', create=False,
                    source_folder=None, file_name=None, filter_on=None):
 
-    if not os.path.exists(folder_target + '/merged'):
+    if not os.path.exists(source_folder + '/merged'):
         os.makedirs(folder_target + '/merged')
         logging.info("Created new folder :{}".format(
             folder_target + '/merged'))
@@ -241,7 +241,7 @@ def create_dataset(sample_period='1Min', create=False,
                       resample=sample_period, filter_on=filter_on)
 
     _add_calendar_data(df)
-    df.to_csv(source_folder + '/merged/raw.csv',sep=';')
+    df.to_csv(source_folder + '/merged/raw.csv', sep=';')
     df = _remove_null(df, source_folder=source_folder)
     _regularize(df)
 
