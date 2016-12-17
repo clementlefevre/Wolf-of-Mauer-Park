@@ -229,9 +229,9 @@ def create_dataset(sample_period='1Min', create=False,
                    source_folder=None, file_name=None, filter_on=None):
 
     if not os.path.exists(source_folder + '/merged'):
-        os.makedirs(folder_target + '/merged')
+        os.makedirs(source_folder + '/merged')
         logging.info("Created new folder :{}".format(
-            folder_target + '/merged'))
+            source_folder + '/merged'))
 
     if create:
         _chunk_and_resample_folder(
