@@ -244,3 +244,14 @@ KeyboardInterrupt
 2016-12-16 18:38:35,682 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
 2016-12-16 18:40:11,854 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
 2016-12-16 18:42:08,194 [INFO ]  compute prediction for Close_Ask_EURRUB : {'to': datetime.datetime(2016, 12, 1, 9, 0), 'from': datetime.datetime(2016, 12, 1, 8, 0)}
+2016-12-17 17:12:47,687 [ERROR]  Line magic function `%top` not found.
+2016-12-21 19:16:34,208 [INFO ]  new Simulator created
+2016-12-21 19:16:34,208 [INFO ]  new Simulator created
+2016-12-21 19:17:35,509 [INFO ]  new Simulator created
+2016-12-21 19:17:35,509 [INFO ]  new Simulator created
+2016-12-21 19:17:38,229 [INFO ]  start reading the source data..
+2016-12-21 19:17:38,229 [INFO ]  start reading the source data..
+2016-12-21 19:18:48,846 [INFO ]  new Simulator created
+2016-12-21 19:18:50,639 [INFO ]  start reading the source data..
+2016-12-21 19:21:13,599 [INFO ]  new Simulator created
+2016-12-21 19:21:13,618 [INFO ]  start reading the source data..

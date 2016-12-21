@@ -22,7 +22,7 @@ Given X_i at time_i, we can then predict the y_i+n value at time_i+n.
 import logging
 
 
-def train_test_split(df, interval):
+def train_forecast_split(df, interval):
     training_df = df[df.cal_time < interval['from']]
     forecast_df = df[(df.cal_time >= interval['from'])
                      & (df.cal_time < interval['to'])]
@@ -47,7 +47,7 @@ def clean_features(df, target):
 
 def create_dataset(df, target, interval, shift=None):
     X_y_dict = {}
-    training_df, forecast_df = train_test_split(df, interval)
+    training_df, forecast_df = train_forecast_split(df, interval)
 
     features_col = clean_features(df, target)
 

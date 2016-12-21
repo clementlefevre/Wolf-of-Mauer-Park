@@ -5,7 +5,7 @@ All the prediction are stored as Prediction object."""
 
 from datetime import datetime, timedelta
 import pandas as pd
-
+import logging
 
 class Prediction(object):
 
@@ -35,6 +35,7 @@ class Simulator(object):
         self.shift = shift
         self.fit_model = fit_model
         self.predictions = []
+        logging.info('new Simulator created')
 
     def __repr__(self):
         return "Targets : {0.targets} : [{0.dt_from}-{0.dt_to}] steps:{0.steps} shift:{0.shift}".format(self)
