@@ -1,6 +1,6 @@
 import pickle
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 import xgboost
 import logging
@@ -27,9 +27,9 @@ def get_classifier_params():
                                  reg_lambda=[1],
                                  scale_pos_weight=[1],
                                  base_score=[0.5],
-                                 seed=[0],verbose=True,
+                                 seed=[0],
                                  missing=[None])
-    return clf,params
+    return clf, params
 
 def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
     gs = GridSearchCV(clf, param_grid=parameters, cv=n_folds)
@@ -54,7 +54,8 @@ def make_prediction(df, target, interval, shift, fit_model=False):
     clf, params = get_classifier_params()                                                
     if fit_model:
         logging.info('Start GridSearchCV...')       
-        cv_optimize(target, clf,params,dataset['X_train'],dataset['y_train'])
+        cv_optimize(target,
+                    clf,params,dataset['training_X'],dataset['training_y'])
         logging.info('finished  fitting via GridSearchCV')
     df_prediction = predict(dataset, target, shift)
     return Prediction(df_prediction, target, interval, shift)

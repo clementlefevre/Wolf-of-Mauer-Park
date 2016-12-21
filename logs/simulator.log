@@ -255,3 +255,74 @@ KeyboardInterrupt
 2016-12-21 19:18:50,639 [INFO ]  start reading the source data..
 2016-12-21 19:21:13,599 [INFO ]  new Simulator created
 2016-12-21 19:21:13,618 [INFO ]  start reading the source data..
+2016-12-21 19:26:20,179 [INFO ]  source  file read, size of dataframe : (2735537, 249)
+2016-12-21 19:26:20,180 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 19:26:20,181 [INFO ]  starting creating dataset...
+2016-12-21 19:56:54,110 [INFO ]  new Simulator created
+2016-12-21 19:58:21,801 [INFO ]  new Simulator created
+2016-12-21 19:58:24,667 [INFO ]  start reading the source data..
+2016-12-21 19:59:08,558 [INFO ]  new Simulator created
+2016-12-21 20:04:53,246 [INFO ]  new Simulator created
+2016-12-21 20:05:33,727 [INFO ]  start reading the source data..
+2016-12-21 20:08:03,041 [INFO ]  source  file read, size of dataframe : (2735537, 249)
+2016-12-21 20:10:07,329 [INFO ]  new Simulator created
+2016-12-21 20:10:11,456 [INFO ]  start reading the source data..
+2016-12-21 20:12:22,221 [INFO ]  source  file read, size of dataframe : (2735537, 249)
+2016-12-21 20:12:22,221 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 12, 1, 10, 10), 'from': datetime.datetime(2016, 12, 1, 10, 0)}
+2016-12-21 20:12:22,221 [INFO ]  starting creating dataset...
+2016-12-21 20:15:56,039 [INFO ]  new Simulator created
+2016-12-21 20:16:01,045 [INFO ]  start reading the source data..
+2016-12-21 20:17:53,076 [INFO ]  new Simulator created
+2016-12-21 20:18:04,075 [INFO ]  source  file read, size of dataframe : (2735537, 249)
+2016-12-21 20:18:04,076 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 12, 1, 10, 10), 'from': datetime.datetime(2016, 12, 1, 10, 0)}
+2016-12-21 20:18:04,076 [INFO ]  starting creating dataset...
+2016-12-21 20:18:29,234 [INFO ]  start reading the source data..
+2016-12-21 20:18:33,854 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:18:33,855 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:18:33,855 [INFO ]  starting creating dataset...
+2016-12-21 20:20:09,354 [INFO ]  new Simulator created
+2016-12-21 20:20:10,827 [INFO ]  start reading the source data..
+2016-12-21 20:20:15,281 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:20:15,282 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:20:15,283 [INFO ]  starting creating dataset...
+2016-12-21 20:23:30,931 [INFO ]  start reading the source data..
+2016-12-21 20:23:35,587 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:23:35,589 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:23:35,590 [INFO ]  starting creating dataset...
+2016-12-21 20:24:42,932 [INFO ]  start reading the source data..
+2016-12-21 20:24:47,696 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:24:47,698 [INFO ]  compute prediction for USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:24:47,698 [INFO ]  starting creating dataset...
+2016-12-21 20:30:38,237 [INFO ]  new Simulator created
+2016-12-21 20:30:38,256 [INFO ]  start reading the source data..
+2016-12-21 20:30:42,329 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:30:42,331 [INFO ]  compute prediction for Ask_Bid_USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:30:42,332 [INFO ]  starting creating dataset...
+2016-12-21 20:31:34,113 [INFO ]  new Simulator created
+2016-12-21 20:31:35,773 [INFO ]  start reading the source data..
+2016-12-21 20:31:40,207 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:31:40,208 [INFO ]  compute prediction for Open_Ask_USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:31:40,209 [INFO ]  starting creating dataset...
+2016-12-21 20:31:45,620 [INFO ]  finished preparing dataset
+2016-12-21 20:31:45,621 [INFO ]  Start GridSearchCV...
+2016-12-21 20:36:22,204 [INFO ]  new Simulator created
+2016-12-21 20:36:22,222 [INFO ]  start reading the source data..
+2016-12-21 20:36:26,244 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:36:26,246 [INFO ]  compute prediction for Open_Ask_USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:36:26,247 [INFO ]  starting creating dataset...
+2016-12-21 20:36:26,459 [INFO ]  finished preparing dataset
+2016-12-21 20:36:26,460 [INFO ]  Start GridSearchCV...
+2016-12-21 20:39:56,510 [INFO ]  new Simulator created
+2016-12-21 20:39:56,529 [INFO ]  start reading the source data..
+2016-12-21 20:40:00,546 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:40:00,547 [INFO ]  compute prediction for Open_Ask_USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:40:00,548 [INFO ]  starting creating dataset...
+2016-12-21 20:40:00,762 [INFO ]  finished preparing dataset
+2016-12-21 20:40:00,763 [INFO ]  Start GridSearchCV...
+2016-12-21 20:40:32,527 [INFO ]  new Simulator created
+2016-12-21 20:40:32,546 [INFO ]  start reading the source data..
+2016-12-21 20:40:36,560 [INFO ]  source  file read, size of dataframe : (100000, 250)
+2016-12-21 20:40:36,563 [INFO ]  compute prediction for Open_Ask_USDMXN : {'to': datetime.datetime(2016, 1, 12, 10, 10), 'from': datetime.datetime(2016, 1, 12, 10, 0)}
+2016-12-21 20:40:36,563 [INFO ]  starting creating dataset...
+2016-12-21 20:40:36,780 [INFO ]  finished preparing dataset
+2016-12-21 20:40:36,781 [INFO ]  Start GridSearchCV...
