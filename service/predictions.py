@@ -1,6 +1,6 @@
 import pickle
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 import xgboost
 import logging
@@ -47,16 +47,18 @@ def predict(dataset, target, shift):
     prediction_df.predicted.shift(periods=shift)
     return prediction_df
 
+def get_model(dataset, target, fit_model=False):
+    clf, params = get_classifier_params()
+    if fit_model:
+        logging.info('Start GridSearchCV...')
+        cv_optimize(target,
+                    clf,params,dataset['training_X'],dataset['training_y'])
+        logging.info('finished  fitting via GridSearchCV')
+
 def make_prediction(df, target, interval, shift, fit_model=False):
     logging.info('starting creating dataset...')
     dataset = create_dataset(df, target, interval, shift)
     logging.info('finished preparing dataset')
-    clf, params = get_classifier_params()                                                
-    if fit_model:
-        logging.info('Start GridSearchCV...')       
-        cv_optimize(target,
-                    clf,params,dataset['training_X'],dataset['training_y'])
-        logging.info('finished  fitting via GridSearchCV')
     df_prediction = predict(dataset, target, shift)
     return Prediction(df_prediction, target, interval, shift)
 
@@ -88,5 +90,6 @@ def compute_and_pickle(simulator, dataset_path=None):
                 df_merged, target, interval,
                 simulator.shift, simulator.fit_model)
             simulator.predictions.append(prediction)
-
+    logging.info('Finished compute predictions')
     pickle.dump(simulator, open("data/predictions/simulator.p", "wb"))
+    logging.info('FINISHED')
