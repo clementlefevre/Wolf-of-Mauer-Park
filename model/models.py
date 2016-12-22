@@ -25,7 +25,8 @@ class Prediction(object):
 
 class Simulator(object):
 
-    def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None, steps=10, fit_model=False):
+    def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None,
+                 steps=10, fit_model=False, datasource_path=None):
 
         self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
         self.dt_to = datetime.strptime(dt_to, '%Y-%m-%d %H:%M')
@@ -34,6 +35,7 @@ class Simulator(object):
         self.targets = targets
         self.shift = shift
         self.fit_model = fit_model
+        self.datasource_path = datasource_path
         self.predictions = []
         logging.info('new Simulator created')
 

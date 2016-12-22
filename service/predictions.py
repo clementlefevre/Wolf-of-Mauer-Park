@@ -39,6 +39,15 @@ def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
     pickle.dump(best, open(
         "data/predictions/model_{}.p".format(target), "wb"))
 
+
+def fit_model(dataset, target, fit_model=False):
+    clf, params = get_classifier_params()
+    if fit_model:
+        logging.info('Start GridSearchCV...')
+        cv_optimize(target,
+                    clf,params,dataset['training_X'],dataset['training_y'])
+        logging.info('finished  fitting via GridSearchCV')
+
 def predict(dataset, target, shift):
     model = pickle.load(open("data/predictions/model_{}.p".format(target), "rb"))
     predictions = model.predict(dataset['forecast_X'])
@@ -47,18 +56,7 @@ def predict(dataset, target, shift):
     prediction_df.predicted.shift(periods=shift)
     return prediction_df
 
-def get_model(dataset, target, fit_model=False):
-    clf, params = get_classifier_params()
-    if fit_model:
-        logging.info('Start GridSearchCV...')
-        cv_optimize(target,
-                    clf,params,dataset['training_X'],dataset['training_y'])
-        logging.info('finished  fitting via GridSearchCV')
-
-def make_prediction(df, target, interval, shift, fit_model=False):
-    logging.info('starting creating dataset...')
-    dataset = create_dataset(df, target, interval, shift)
-    logging.info('finished preparing dataset')
+def make_prediction(dataset, target, interval, shift): 
     df_prediction = predict(dataset, target, shift)
     return Prediction(df_prediction, target, interval, shift)
 
@@ -76,20 +74,24 @@ def plot_predictions(simulator):
 
             df.plot(ax=axes[j], title=title, lw=1)
 
-
+def fit_model(simulator):
+    logging.info('Start fitting the model {}'.format(simulator)
+                 
 def compute_and_pickle(simulator, dataset_path=None):
     logging.info('start reading the source data..')
     df_merged = pd.read_csv(dataset_path,
                             sep=';', parse_dates=['cal_time'])
     logging.info('source  file read, size of dataframe : {}'.format(df_merged.shape))
     for target in simulator.targets:
-        for interval in simulator.intervals:
-            logging.info(
-                "compute prediction for {0} : {1}".format(target, interval))
-            prediction = make_prediction(
-                df_merged, target, interval,
-                simulator.shift, simulator.fit_model)
-            simulator.predictions.append(prediction)
+        dataset = create_dataset(df_merged, target, simulator.interval,
+                                 simulator.shift)
+        set_model(dataset, target, fit_model = simulator.fit_model)
+        logging.info(
+                'compute prediction for {0} : {1}'.format(target, interval))
+        prediction = make_prediction(
+                dataset, target, interval,
+                simulator.shift)
+        simulator.predictions.append(prediction)
     logging.info('Finished compute predictions')
     pickle.dump(simulator, open("data/predictions/simulator.p", "wb"))
     logging.info('FINISHED')

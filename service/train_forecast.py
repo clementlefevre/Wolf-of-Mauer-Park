@@ -35,10 +35,7 @@ def clean_features(df, target):
         "reg" in col or "cal_" in col)]
 
     # Exclude the target from features
-    print target
     features_col = [col for col in features_col if target not in col]
-    for f in features_col:
-        print f
     # Time index is not a feature
     features_col.remove('cal_time')
 
@@ -46,6 +43,7 @@ def clean_features(df, target):
 
 
 def create_dataset(df, target, interval, shift=None):
+    logging.info('Start creating the dataset for {}'.format(target))
     X_y_dict = {}
     training_df, forecast_df = train_forecast_split(df, interval)
 
@@ -65,4 +63,5 @@ def create_dataset(df, target, interval, shift=None):
 
     X_y_dict['features_names'] = features_col
 
+    logging.info('Finished creating the dataset for {}'.format(target))   
     return X_y_dict
