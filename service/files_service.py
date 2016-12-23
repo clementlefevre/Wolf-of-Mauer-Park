@@ -1,9 +1,13 @@
+"""
+This module allows the conversion of multiple raw data files  into 
+a single dataframe compatible with the fitting algorithm.
+
+"""
 import os
 import pandas as pd
 import zipfile
 import logging
 
-# this one triggers the debugger
 
 LAG = 10
 
@@ -232,8 +236,8 @@ def unzip_folder(folder_origin=None, folder_target=None):
         zip_ref.close()
 
 
-def create_dataset(sample_period='1Min', create=False,
-                   source_folder=None, file_name=None, filter_on=None, raw_exists=False):
+def create_datasource(sample_period='1Min', create=False,
+                      source_folder=None, file_name=None, filter_on=None, raw_exists=False, _add_rolling_mean=False, _add_ewma=False):
 
     if not os.path.exists(source_folder + '/merged'):
         os.makedirs(source_folder + '/merged')

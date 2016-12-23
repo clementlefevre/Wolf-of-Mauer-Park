@@ -4,8 +4,8 @@ For each time interval and each target, the Factory compute a prediction.and
 All the prediction are stored as Prediction object."""
 
 from datetime import datetime, timedelta
-import pandas as pd
 import logging
+
 
 class Prediction(object):
 
@@ -16,7 +16,8 @@ class Prediction(object):
         self.interval = interval
 
     def __repr__(self):
-        self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M') + " to " +\
+        self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M')\
+            + ' to ' +\
             self.interval['to'].strftime('%Y-%m-%d %H:%M')
 
         return "{0.serie_name} : {0.shift} : {0.interval_str} :\
@@ -36,11 +37,12 @@ class Simulator(object):
         self.shift = shift
         self.fit_model = fit_model
         self.datasource_path = datasource_path
-        self.predictions = []
+        self.predictions = {}
         logging.info('new Simulator created')
 
     def __repr__(self):
-        return "Targets : {0.targets} : [{0.dt_from}-{0.dt_to}] steps:{0.steps} shift:{0.shift}".format(self)
+        return "Targets : {0.targets} : [{0.dt_from}-{0.dt_to}]\
+         steps:{0.steps} shift:{0.shift}".format(self)
 
     def _create_intervals(self):
         intervals = []
