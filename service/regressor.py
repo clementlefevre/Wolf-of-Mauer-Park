@@ -96,6 +96,7 @@ def predict(simulator, target):
         predictions = model.predict(dataset['forecast_X_' + str(i)])
         df_prediction = pd.DataFrame({'predicted': predictions, 'observed': dataset['observed_y_' + str(i)]},
                                      index=dataset['label_forecast'])
+
         df_prediction.predicted = df_prediction.predicted.shift(
             periods=simulator.shift)
         target_predictions.append(Prediction(

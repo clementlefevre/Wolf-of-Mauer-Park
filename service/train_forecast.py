@@ -53,18 +53,27 @@ def create_dataset(df, target, intervals, shift=None):
     X_y_dict = {}
     training_df, forecast_df_list = train_forecast_split(df, intervals)
 
+    from IPython.core.debugger import Tracer
+    Tracer()()  # this one triggers the debugger
+
+    training_df[target] = training_df[target].shift(periods=-shift)
+
+    training_df = training_df[:-shift]
+
     features_col = clean_features(df, target)
 
     X_y_dict['training_X'] = training_df[
-        features_col].shift(periods=shift).values
+        features_col].values
+
     X_y_dict['training_y'] = training_df[target].values
 
     for i, forecast_df in enumerate(forecast_df_list):
 
         X_y_dict['forecast_X_' + str(i)] = forecast_df[
-            features_col].shift(periods=shift).values
+            features_col].values
 
-        X_y_dict['observed_y_' + str(i)] = forecast_df[target].values
+        X_y_dict['observed_y_' +
+                 str(i)] = forecast_df[target].values
 
     X_y_dict['label_training'] = training_df.cal_time.values
     X_y_dict['label_forecast'] = forecast_df.cal_time.values
