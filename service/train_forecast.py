@@ -45,7 +45,7 @@ def add_previous_ticks(df, simulator):
 
         df[simulator.target + '_shifted_' +
             str(tick)] = df[col].shift(periods=tick)
-        logging.info('ticks : {} added for column :{}'.format(tick, target))
+        logging.info('ticks : {} added for column :{}'.format(tick, simulator.target))
 
     df = df.fillna(0)
 
