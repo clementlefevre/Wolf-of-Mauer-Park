@@ -20,19 +20,35 @@ Given X_i at time_i, we can then predict the y_i+n value at time_i+n.
 '''
 
 from IPython.core.debugger import Tracer
+import pandas as pd
 import logging
 
 
-def train_forecast_split(df, intervals):
-    training_df = df[df.cal_time < intervals[0]['from']]
+def train_forecast_split(df, interval):
+    training_df = df[df.cal_time < interval['from']]
 
-    forecast_df_list = []
-    for interval in intervals:
-        forecast_df = df[(df.cal_time >= interval['from'])
-                         & (df.cal_time < interval['to'])]
-        forecast_df_list.append(forecast_df)
+    forecast_df = df[(df.cal_time >= interval['from'])
+                     & (df.cal_time < interval['to'])]
+    return training_df, forecast_df
 
-    return training_df, forecast_df_list
+
+def add_pip(df, target):
+
+    df.loc[target + '_pip'] = df[target] - df[target].iloc[0]
+    return df
+
+
+def add_previous_ticks(df, simulator):
+    cols = [col for col in df.columns.tolist()]
+    cols_reg = [col for col in cols if (
+        '_reg' in col)]
+    for tick in simulator.ticks_to_shift:
+        for col in cols_reg:
+            df[col + '_shifted_' + str(tick)] = df[col].shift(periods=tick)
+
+    df = df.fillna(0)
+
+    return df
 
 
 def clean_features(df, target):
@@ -48,37 +64,37 @@ def clean_features(df, target):
     return features_col
 
 
-def create_dataset(df, target, intervals, shift=None):
-    logging.info('Start creating the dataset for {}'.format(target))
+def create_dataset(df, simulator):
+    logging.info('Start creating the dataset for {}'.format(simulator.target))
+
+    df = add_previous_ticks(df, simulator)
+
     X_y_dict = {}
-    training_df, forecast_df_list = train_forecast_split(df, intervals)
+    training_df, forecast_df = train_forecast_split(df, simulator.interval)
 
-    from IPython.core.debugger import Tracer
-    Tracer()()  # this one triggers the debugger
+    # Tracer()()  # this one triggers the debugger
 
-    training_df[target] = training_df[target].shift(periods=-shift)
+    training_df.loc[simulator.target] = training_df[
+        simulator.target].shift(periods=-simulator.shift)
 
-    training_df = training_df[:-shift]
+    training_df = training_df[:-simulator.shift]
 
-    features_col = clean_features(df, target)
+    features_col = clean_features(df, simulator.target)
 
     X_y_dict['training_X'] = training_df[
         features_col].values
 
-    X_y_dict['training_y'] = training_df[target].values
+    X_y_dict['training_y'] = training_df[simulator.target].values
 
-    for i, forecast_df in enumerate(forecast_df_list):
+    X_y_dict['forecast_X'] = forecast_df[features_col].values
 
-        X_y_dict['forecast_X_' + str(i)] = forecast_df[
-            features_col].values
-
-        X_y_dict['observed_y_' +
-                 str(i)] = forecast_df[target].values
+    X_y_dict['observed_y'] = forecast_df[simulator.target].values
 
     X_y_dict['label_training'] = training_df.cal_time.values
     X_y_dict['label_forecast'] = forecast_df.cal_time.values
 
     X_y_dict['features_names'] = features_col
 
-    logging.info('Finished creating the dataset for {}'.format(target))
+    logging.info(
+        'Finished creating the dataset for {}'.format(simulator.target))
     return X_y_dict

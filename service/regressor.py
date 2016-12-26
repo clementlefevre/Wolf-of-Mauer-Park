@@ -1,9 +1,11 @@
 import pickle
+import numpy
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 import xgboost
 import logging
+from IPython.core.debugger import Tracer
 
 from service.train_forecast import create_dataset
 from model.models import Prediction
@@ -11,7 +13,7 @@ from model.models import Prediction
 
 def get_classifier_params():
     clf = xgboost.XGBRegressor()
-    params = dict(max_depth=[30, 60, 90, 300],
+    params = dict(max_depth=[10, 30, 60, 90, 300],
                   learning_rate=[0.01, 0.1],
                   n_estimators=[50, 100, 200],
                   silent=[True],
@@ -41,18 +43,28 @@ def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
         "data/predictions/model_{}.p".format(target), "wb"))
 
 
-def fit_model(dataset, target):
+def features_weight(simulator):
+    model = pickle.load(
+        open("data/predictions/model_{}.p".format(simulator.target), "rb"))
+    dataset = pickle.load(
+        open("data/predictions/dataset_{}.p".format(simulator.target), "rb"))
+
+    df_weights = pd.DataFrame(
+        model.booster().get_score().items(), columns=['index', 'weight'])
+
+    df_weights['feature_name'] = dataset['features_names']
+    df_weights = df_weights.sort_values(by='weight', ascending=False)
+
+    return df_weights
+
+
+def fit_model(dataset, simulator):
     clf, params = get_classifier_params()
-    if fit_model:
+    if simulator.fit_model:
         logging.info('Start GridSearchCV...')
-        cv_optimize(target,
+        cv_optimize(simulator.target,
                     clf, params, dataset['training_X'], dataset['training_y'])
         logging.info('finished  fitting via GridSearchCV')
-
-
-def make_prediction(dataset, target, interval, shift):
-    df_prediction = predict(dataset, target, shift)
-    return Prediction(df_prediction, target, interval, shift)
 
 
 def plot_predictions(simulator):
@@ -69,38 +81,45 @@ def plot_predictions(simulator):
             df.plot(ax=axes[j], title=title, lw=1)
 
 
-def create_dataset_and_fit(simulator):
-    logging.info('Start fitting the model {}'.format(simulator))
-    # for each target, fit a model
+def dataset(simulator):
     df_source = pd.read_csv(simulator.datasource_path,
                             sep=';', parse_dates=['cal_time'])
 
-    for target in simulator.targets:
-        dataset = create_dataset(df_source, target, simulator.intervals,
-                                 simulator.shift)
-        pickle.dump(
-            dataset, open('data/predictions/dataset_{}'.format(target), 'wb'))
-        fit_model(dataset, target)
+    dataset = create_dataset(df_source, simulator)
+    pickle.dump(
+        dataset, open('data/predictions/dataset_{}.p'.format(simulator.target), 'wb'))
 
 
-def predict(simulator, target):
-    model = pickle.load(
-        open("data/predictions/model_{}.p".format(target), "rb"))
+def fit(simulator):
+    logging.info('Start fitting the model {}'.format(simulator))
+    # for each target, fit a model
+
     dataset = pickle.load(
-        open('data/predictions/dataset_{}'.format(target), 'rb'))
+        open('data/predictions/dataset_{}.p'.format(simulator.target), 'rb'))
+    fit_model(dataset, simulator)
+    simulator.features_weight = features_weight(simulator)
 
-    target_predictions = []
 
-    for i, interval in enumerate(simulator.intervals):
+def predict(simulator):
+    model = pickle.load(
+        open("data/predictions/model_{}.p".format(simulator.target), "rb"))
+    dataset = pickle.load(
+        open('data/predictions/dataset_{}.p'.format(simulator.target), 'rb'))
 
-        predictions = model.predict(dataset['forecast_X_' + str(i)])
-        df_prediction = pd.DataFrame({'predicted': predictions, 'observed': dataset['observed_y_' + str(i)]},
-                                     index=dataset['label_forecast'])
+    predictions = model.predict(dataset['forecast_X'])
+    df_prediction = pd.DataFrame({'predicted': predictions, 'observed': dataset['observed_y']},
+                                 index=dataset['label_forecast'])
 
-        df_prediction.predicted = df_prediction.predicted.shift(
-            periods=simulator.shift)
-        target_predictions.append(Prediction(
-            df_prediction, target, interval, simulator.shift))
-    simulator.predictions[target] = target_predictions
+    r2 = model.score(dataset['forecast_X'],
+                     dataset['observed_y'])
+
+    simulator.r2 = r2
+    logging.info('R2 = {}'.format(r2))
+
+    df_prediction.predicted = df_prediction.predicted.shift(
+        periods=simulator.shift)
+
+    simulator.predictions = Prediction(
+        df_prediction, simulator.target, simulator.interval, simulator.shift, r2)
     pickle.dump(simulator, open(
-        'data/predictions/simulator_{}'.format(target), 'wb'))
+        'data/predictions/simulator_{}.p'.format(simulator.target), 'wb'))

@@ -90,3 +90,323 @@
 2016-12-23 14:08:46,739 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
 2016-12-23 14:08:46,827 [INFO ]  Start GridSearchCV...
 2016-12-23 14:09:38,543 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 10:27:18,029 [INFO ]  new Simulator created
+2016-12-24 10:28:12,132 [INFO ]  new Simulator created
+2016-12-24 10:28:13,601 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:30 shift:3
+2016-12-24 10:28:13,671 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:28:15,837 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:28:15,921 [INFO ]  Start GridSearchCV...
+2016-12-24 10:28:59,442 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 10:33:53,243 [INFO ]  new Simulator created
+2016-12-24 10:37:44,676 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-30 10:30:00]         steps:1440 shift:3
+2016-12-24 10:37:44,741 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:37:46,413 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:37:46,498 [INFO ]  Start GridSearchCV...
+2016-12-24 10:38:31,518 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 10:39:23,254 [INFO ]  new Simulator created
+2016-12-24 10:42:47,190 [INFO ]  new Simulator created
+2016-12-24 10:42:52,510 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-30 10:30:00]         steps:43200 shift:3
+2016-12-24 10:42:52,578 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:42:52,638 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:42:52,722 [INFO ]  Start GridSearchCV...
+2016-12-24 10:43:49,536 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-30 10:30:00]         steps:43200 shift:3
+2016-12-24 10:43:49,593 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:43:49,651 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 10:43:49,737 [INFO ]  Start GridSearchCV...
+2016-12-24 11:23:24,600 [INFO ]  new Simulator created
+2016-12-24 11:23:31,589 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-30 10:30:00]         steps:43200 shift:3
+2016-12-24 11:23:31,666 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:23:31,724 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:23:31,848 [INFO ]  Start GridSearchCV...
+2016-12-24 11:25:36,430 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 11:30:23,032 [INFO ]  new Simulator created
+2016-12-24 11:30:26,373 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-30 10:30:00]         steps:43200 shift:3
+2016-12-24 11:30:26,448 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:30:26,509 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:30:26,635 [INFO ]  Start GridSearchCV...
+2016-12-24 11:32:45,712 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 11:33:42,909 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:33:49,166 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:33:49,800 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:33:50,255 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:33:50,713 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:33:51,206 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:35:49,936 [INFO ]  new Simulator created
+2016-12-24 11:35:54,294 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:35:56,931 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 11:35:57,022 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:35:57,087 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:35:57,210 [INFO ]  Start GridSearchCV...
+2016-12-24 11:38:08,132 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 11:38:11,706 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:38:45,694 [INFO ]  new Simulator created
+2016-12-24 11:38:45,776 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 11:38:45,843 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:38:45,896 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 11:38:46,022 [INFO ]  Start GridSearchCV...
+2016-12-24 11:40:56,429 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 11:40:56,674 [INFO ]  R2 = 0.133381006224
+2016-12-24 11:41:22,151 [INFO ]  R2 = 0.133381006224
+2016-12-24 17:15:03,890 [INFO ]  new Simulator created
+2016-12-24 17:15:07,901 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 17:16:28,647 [INFO ]  new Simulator created
+2016-12-24 17:16:32,634 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 17:16:32,713 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:16:32,774 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:16:32,898 [INFO ]  Start GridSearchCV...
+2016-12-24 17:19:39,010 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 17:24:52,281 [INFO ]  new Simulator created
+2016-12-24 17:24:52,364 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 17:24:52,432 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:25:34,611 [INFO ]  new Simulator created
+2016-12-24 17:25:34,696 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDMXN'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:43200 shift:3
+2016-12-24 17:25:34,763 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:25:34,815 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:25:34,936 [INFO ]  Start GridSearchCV...
+2016-12-24 17:28:25,456 [INFO ]  finished  fitting via GridSearchCV
+2016-12-24 17:28:25,567 [INFO ]  R2 = 0.133381006224
+2016-12-24 17:28:36,829 [INFO ]  R2 = 0.133381006224
+2016-12-24 17:31:02,177 [INFO ]  new Simulator created
+2016-12-24 17:31:05,998 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:31:06,056 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:31:27,148 [INFO ]  R2 = 0.133381006224
+2016-12-24 17:31:48,087 [INFO ]  new Simulator created
+2016-12-24 17:33:48,571 [INFO ]  R2 = 0.133381006224
+2016-12-24 17:34:43,262 [INFO ]  new Simulator created
+2016-12-24 17:36:10,206 [INFO ]  new Simulator created
+2016-12-24 17:36:18,311 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:36:20,492 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:36:27,574 [INFO ]  R2 = -2.65210655455
+2016-12-24 17:37:31,911 [INFO ]  new Simulator created
+2016-12-24 17:37:39,791 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:37:41,917 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:37:45,201 [INFO ]  R2 = -2.65210655455
+2016-12-24 17:45:56,367 [INFO ]  new Simulator created
+2016-12-24 17:45:58,075 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-24 17:46:00,839 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:31:49,646 [INFO ]  new Simulator created
+2016-12-25 11:31:57,160 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:31:57,216 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:32:34,737 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:32:34,795 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:32:41,382 [INFO ]  new Simulator created
+2016-12-25 11:32:43,462 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:32:43,521 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-25 11:32:46,571 [INFO ]  R2 = -2.65210655455
+2016-12-26 10:32:09,650 [INFO ]  new Simulator created
+2016-12-26 10:32:11,884 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:37:48,790 [INFO ]  new Simulator created
+2016-12-26 10:37:48,881 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:43:52,952 [INFO ]  R2 = -2.65210655455
+2016-12-26 10:44:02,743 [INFO ]  new Simulator created
+2016-12-26 10:44:02,837 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:44:04,280 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:44:50,248 [INFO ]  new Simulator created
+2016-12-26 10:44:50,347 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:44:52,577 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-26 10:44:52,764 [INFO ]  R2 = -2.65210655455
+2016-12-26 10:54:10,552 [INFO ]  new Simulator created
+2016-12-26 10:54:12,126 [INFO ]  new Simulator created
+2016-12-26 10:54:24,076 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDNOK'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:10 shift:3
+2016-12-26 10:54:52,992 [INFO ]  new Simulator created
+2016-12-26 10:54:54,697 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 10:54:56,178 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 10:54:59,704 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDNOK'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:10 shift:3
+2016-12-26 10:55:39,614 [INFO ]  new Simulator created
+2016-12-26 10:55:41,994 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 10:55:43,259 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 10:55:48,442 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDNOK'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:10 shift:3
+2016-12-26 10:55:48,490 [INFO ]  Start GridSearchCV...
+2016-12-26 10:57:49,694 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 11:06:19,846 [INFO ]  new Simulator created
+2016-12-26 11:06:19,951 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:06:21,586 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:06:21,732 [INFO ]  Start fitting the model Targets : ['Open_Ask_USDNOK'] : [2011-09-29 10:00:00-2011-09-29 10:30:00]         steps:10 shift:3
+2016-12-26 11:06:21,763 [INFO ]  Start GridSearchCV...
+2016-12-26 11:08:21,441 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 11:10:10,986 [INFO ]  R2 = 0.815363778153
+2016-12-26 11:22:37,701 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:22:38,916 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:23:28,503 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:23:29,533 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:23:39,420 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:23:40,288 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:24:12,057 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:24:28,858 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:24:53,765 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:24:54,666 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:42:01,132 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:42:02,254 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:44:28,731 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 11:44:29,924 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 13:43:48,530 [INFO ]  new Simulator created
+2016-12-26 13:43:50,587 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 13:43:52,423 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 13:43:57,588 [INFO ]  R2 = 0.815363778153
+2016-12-26 14:03:26,528 [INFO ]  new Simulator created
+2016-12-26 14:04:57,677 [INFO ]  new Simulator created
+2016-12-26 14:04:59,400 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:05:00,758 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:05:22,883 [INFO ]  new Simulator created
+2016-12-26 14:05:24,464 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:05:25,671 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:05:40,160 [INFO ]  R2 = 0.815363778153
+2016-12-26 14:06:36,394 [INFO ]  new Simulator created
+2016-12-26 14:06:37,760 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:06:39,007 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:06:42,805 [INFO ]  R2 = 0.815363778153
+2016-12-26 14:26:53,757 [INFO ]  new Simulator created
+2016-12-26 14:26:57,458 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:27:25,006 [INFO ]  new Simulator created
+2016-12-26 14:27:26,956 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:28:34,821 [INFO ]  new Simulator created
+2016-12-26 14:28:36,338 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:28:59,612 [INFO ]  new Simulator created
+2016-12-26 14:29:01,045 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:29:01,982 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:29:41,540 [INFO ]  new Simulator created
+2016-12-26 14:29:42,968 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:29:43,907 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:29:46,129 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 14:30:15,657 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 14:30:15,712 [INFO ]  Start GridSearchCV...
+2016-12-26 14:31:51,277 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 14:32:22,100 [INFO ]  R2 = 0.815363778153
+2016-12-26 14:34:47,639 [INFO ]  new Simulator created
+2016-12-26 14:34:49,468 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:34:50,442 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:34:56,141 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 14:34:56,187 [INFO ]  Start GridSearchCV...
+2016-12-26 14:36:54,824 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 14:37:12,521 [INFO ]  R2 = 0.815363778153
+2016-12-26 14:38:11,473 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:41:44,763 [INFO ]  new Simulator created
+2016-12-26 14:41:44,839 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:42:44,249 [INFO ]  new Simulator created
+2016-12-26 14:42:44,319 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:43:25,838 [INFO ]  new Simulator created
+2016-12-26 14:43:25,913 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:44:05,499 [INFO ]  new Simulator created
+2016-12-26 14:44:05,568 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:45:13,422 [INFO ]  new Simulator created
+2016-12-26 14:45:13,491 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:46:51,064 [INFO ]  new Simulator created
+2016-12-26 14:46:51,134 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:47:16,634 [INFO ]  new Simulator created
+2016-12-26 14:47:16,718 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:48:06,942 [INFO ]  new Simulator created
+2016-12-26 14:48:07,015 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:49:34,220 [INFO ]  new Simulator created
+2016-12-26 14:49:34,292 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:50:40,515 [INFO ]  new Simulator created
+2016-12-26 14:50:40,586 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:50:57,505 [INFO ]  new Simulator created
+2016-12-26 14:50:57,584 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:53:00,266 [INFO ]  new Simulator created
+2016-12-26 14:53:00,347 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:53:56,925 [INFO ]  new Simulator created
+2016-12-26 14:53:57,003 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:54:01,376 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 14:54:01,737 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 14:54:01,771 [INFO ]  Start GridSearchCV...
+2016-12-26 14:55:49,561 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 14:56:04,565 [INFO ]  R2 = 0.815363778153
+2016-12-26 15:01:07,232 [INFO ]  new Simulator created
+2016-12-26 15:01:07,306 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:01:11,168 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:01:11,382 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:01:55,810 [INFO ]  new Simulator created
+2016-12-26 15:01:55,885 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:02:25,726 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:02:25,944 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:04:22,975 [INFO ]  new Simulator created
+2016-12-26 15:04:23,052 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:04:23,177 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:04:23,417 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:04:23,457 [INFO ]  Start GridSearchCV...
+2016-12-26 15:06:02,774 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 15:08:31,376 [INFO ]  new Simulator created
+2016-12-26 15:08:31,450 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:08:31,583 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:08:31,792 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:08:31,843 [INFO ]  Start GridSearchCV...
+2016-12-26 15:11:14,212 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 15:12:44,097 [INFO ]  new Simulator created
+2016-12-26 15:12:45,906 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:12:46,037 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:12:49,463 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:13:45,039 [INFO ]  new Simulator created
+2016-12-26 15:13:45,113 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:13:45,233 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:13:45,444 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:15:17,023 [INFO ]  new Simulator created
+2016-12-26 15:15:17,105 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:15:17,231 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:15:17,441 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:16:07,830 [INFO ]  new Simulator created
+2016-12-26 15:16:07,903 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:08,028 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:08,231 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:16:27,341 [INFO ]  new Simulator created
+2016-12-26 15:16:27,416 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:27,538 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:27,747 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:16:56,387 [INFO ]  new Simulator created
+2016-12-26 15:16:56,460 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:56,582 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:16:56,794 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:18:32,075 [INFO ]  new Simulator created
+2016-12-26 15:18:32,144 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:18:32,268 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:18:32,475 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:21:35,881 [INFO ]  new Simulator created
+2016-12-26 15:21:35,952 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:21:36,081 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:21:36,286 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 10:30:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:23:31,649 [INFO ]  new Simulator created
+2016-12-26 15:23:31,728 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:23:31,860 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:23:32,077 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 18:00:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:29:02,785 [INFO ]  new Simulator created
+2016-12-26 15:29:02,861 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:29:02,940 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:29:03,155 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 18:00:00]         ticks_to_shift:[1, 2, 3] shift:3
+2016-12-26 15:29:30,279 [INFO ]  R2 = 0.791971023804
+2016-12-26 15:30:21,831 [INFO ]  new Simulator created
+2016-12-26 15:30:21,905 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:30:22,022 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:30:22,426 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 10:00:00-2011-09-29 18:00:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 15:30:22,529 [INFO ]  Start GridSearchCV...
+2016-12-26 15:35:36,408 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 15:35:52,021 [INFO ]  R2 = 0.780894773431
+2016-12-26 15:36:42,364 [INFO ]  new Simulator created
+2016-12-26 15:36:43,734 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:36:43,853 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:37:04,608 [INFO ]  R2 = 0.527521730032
+2016-12-26 15:37:53,797 [INFO ]  new Simulator created
+2016-12-26 15:37:56,592 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:37:56,710 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:38:06,819 [INFO ]  R2 = -12.4460540309
+2016-12-26 15:39:18,617 [INFO ]  new Simulator created
+2016-12-26 15:39:20,668 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:39:20,788 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:39:28,823 [INFO ]  R2 = -0.870314937674
+2016-12-26 15:47:37,726 [INFO ]  new Simulator created
+2016-12-26 15:47:39,588 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:47:39,710 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:47:46,491 [INFO ]  R2 = 0.644011731401
+2016-12-26 15:58:28,277 [INFO ]  new Simulator created
+2016-12-26 15:58:31,907 [INFO ]  new Simulator created
+2016-12-26 15:58:31,998 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:58:32,112 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:58:32,543 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-30 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 15:58:34,607 [INFO ]  R2 = 0.644011731401
+2016-12-26 15:59:30,401 [INFO ]  new Simulator created
+2016-12-26 15:59:30,478 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:59:30,593 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 15:59:31,025 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-30 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 16:00:15,963 [INFO ]  new Simulator created
+2016-12-26 16:00:16,036 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:00:16,143 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:00:16,566 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-30 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 16:00:16,979 [INFO ]  R2 = 0.644011731401

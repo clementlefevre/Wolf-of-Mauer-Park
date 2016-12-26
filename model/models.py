@@ -9,11 +9,12 @@ import logging
 
 class Prediction(object):
 
-    def __init__(self, df, serie_name, interval, shift):
+    def __init__(self, df, serie_name, interval, shift, r2=None):
         self.df = df
         self.serie_name = serie_name
         self.shift = shift
         self.interval = interval
+        self.r2 = r2
 
     def __repr__(self):
         self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M')\
@@ -26,30 +27,28 @@ class Prediction(object):
 
 class Simulator(object):
 
-    def __init__(self, dt_from=None, dt_to=None, targets=None, shift=None,
-                 steps=10, fit_model=False, datasource_path=None):
+    def __init__(self, dt_from=None, dt_to=None, target=None, shift=None, ticks_to_shift=[],
+                 fit_model=False, datasource_path=None):
 
         self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
         self.dt_to = datetime.strptime(dt_to, '%Y-%m-%d %H:%M')
-        self.steps = steps
-        self.intervals = self._create_intervals()
-        self.targets = targets
+        self.interval = self._create_interval()
+        self.target = target
         self.shift = shift
+        self.ticks_to_shift = ticks_to_shift
         self.fit_model = fit_model
         self.datasource_path = datasource_path
-        self.predictions = {}
+        self.predictions = None
+        self.features_weight = None
+        self.r2 = None
         logging.info('new Simulator created')
 
     def __repr__(self):
-        return "Targets : {0.targets} : [{0.dt_from}-{0.dt_to}]\
-         steps:{0.steps} shift:{0.shift}".format(self)
+        return "Targets : {0.target} : [{0.dt_from}-{0.dt_to}]\
+         ticks_to_shift:{0.ticks_to_shift} shift:{0.shift}".format(self)
 
-    def _create_intervals(self):
-        intervals = []
-        dt_ = self.dt_from
+    def _create_interval(self):
 
-        while dt_ < self.dt_to:
-            intervals.append(
-                {'from': dt_, 'to': dt_ + timedelta(minutes=self.steps)})
-            dt_ += timedelta(minutes=self.steps)
-        return intervals
+        interval = {'from': self.dt_from, 'to': self.dt_to}
+
+        return interval
