@@ -40,11 +40,12 @@ def add_pip(df, target):
 
 def add_previous_ticks(df, simulator):
     cols = [col for col in df.columns.tolist()]
-    cols_reg = [col for col in cols if (
-        '_reg' in col)]
+
     for tick in simulator.ticks_to_shift:
-        for col in cols_reg:
-            df[col + '_shifted_' + str(tick)] = df[col].shift(periods=tick)
+
+        df[simulator.target + '_shifted_' +
+            str(tick)] = df[col].shift(periods=tick)
+        logging.info('ticks : {} added for column :{}'.format(tick, target))
 
     df = df.fillna(0)
 
@@ -57,7 +58,8 @@ def clean_features(df, target):
         "reg" in col or "cal_" in col)]
 
     # Exclude the target from features
-    features_col = [col for col in features_col if target not in col]
+    features_col = [col for col in features_col if (
+        target not in col or '_shifted' in col)]
     # Time index is not a feature
     features_col.remove('cal_time')
 
