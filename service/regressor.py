@@ -1,5 +1,5 @@
 import pickle
-import numpy
+import config
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
@@ -39,15 +39,14 @@ def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
     gs.fit(Xtrain, ytrain)
     print "BEST PARAMS", gs.best_params_
     best = gs.best_estimator_
-    pickle.dump(best, open(
-        "data/predictions/model_{}.p".format(target), "wb"))
+    pickle.dump(best, open(config.data_store_path +'predictions / model_{}.p".format(target), "wb"))
 
 
 def features_weight(simulator):
     model = pickle.load(
-        open("data/predictions/model_{}.p".format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions / model_{}.p".format(simulator.target), "rb"))
     dataset = pickle.load(
-        open("data/predictions/dataset_{}.p".format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions / dataset_{}.p".format(simulator.target), "rb"))
 
     df_weights = pd.DataFrame(
         model.booster().get_score().items(), columns=['index', 'weight'])
@@ -87,7 +86,7 @@ def dataset(simulator):
 
     dataset = create_dataset(df_source, simulator)
     pickle.dump(
-        dataset, open('data/predictions/dataset_{}.p'.format(simulator.target), 'wb'))
+        dataset, open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'wb'))
 
 
 def fit(simulator):
@@ -95,14 +94,14 @@ def fit(simulator):
     # for each target, fit a model
 
     dataset = pickle.load(
-        open('data/predictions/dataset_{}.p'.format(simulator.target), 'rb'))
+        open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'rb'))
     fit_model(dataset, simulator)
     simulator.features_weight = features_weight(simulator)
 
 
 def predict(simulator):
     model = pickle.load(
-        open("data/predictions/model_{}.p".format(simulator.target), "rb"))
+        open(config.data_store_path + 'predictions/model_{}.p'.format(simulator.target), "rb"))
     dataset = pickle.load(
         open('data/predictions/dataset_{}.p'.format(simulator.target), 'rb'))
 
@@ -122,4 +121,4 @@ def predict(simulator):
     simulator.predictions = Prediction(
         df_prediction, simulator.target, simulator.interval, simulator.shift, r2)
     pickle.dump(simulator, open(
-        'data/predictions/simulator_{}.p'.format(simulator.target), 'wb'))
+        config.data_store_path + 'predictions/simulator_{}.p'.format(simulator.target), 'wb'))
