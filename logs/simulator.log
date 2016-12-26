@@ -410,3 +410,66 @@
 2016-12-26 16:00:16,143 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
 2016-12-26 16:00:16,566 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-30 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
 2016-12-26 16:00:16,979 [INFO ]  R2 = 0.644011731401
+2016-12-26 16:21:05,597 [INFO ]  new Simulator created
+2016-12-26 16:21:15,532 [INFO ]  new Simulator created
+2016-12-26 16:21:15,603 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:21:15,716 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:21:16,148 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-30 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 16:21:16,558 [INFO ]  R2 = 0.644011731401
+2016-12-26 16:21:40,124 [INFO ]  new Simulator created
+2016-12-26 16:21:40,199 [INFO ]  Start creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:21:40,308 [INFO ]  Finished creating the dataset for Open_Ask_USDNOK
+2016-12-26 16:21:40,688 [INFO ]  Start fitting the model Targets : Open_Ask_USDNOK : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 16:21:41,041 [INFO ]  R2 = -0.870314937674
+2016-12-26 16:24:46,880 [INFO ]  new Simulator created
+2016-12-26 16:24:52,717 [INFO ]  new Simulator created
+2016-12-26 16:24:52,798 [INFO ]  Start creating the dataset for Open_Ask_EURUSD
+2016-12-26 16:26:07,735 [INFO ]  new Simulator created
+2016-12-26 16:26:08,809 [INFO ]  Start creating the dataset for Open_Ask_EURUSD
+2016-12-26 16:26:39,323 [INFO ]  new Simulator created
+2016-12-26 16:26:42,247 [INFO ]  new Simulator created
+2016-12-26 16:26:42,358 [INFO ]  Start creating the dataset for Open_Ask_USDEUR
+2016-12-26 16:27:15,407 [INFO ]  new Simulator created
+2016-12-26 16:27:22,306 [INFO ]  new Simulator created
+2016-12-26 16:27:22,381 [INFO ]  Start creating the dataset for Open_Ask_USDCAD
+2016-12-26 16:27:22,492 [INFO ]  Finished creating the dataset for Open_Ask_USDCAD
+2016-12-26 16:27:22,883 [INFO ]  Start fitting the model Targets : Open_Ask_USDCAD : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 16:27:22,984 [INFO ]  Start GridSearchCV...
+2016-12-26 16:30:37,731 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 16:30:38,087 [INFO ]  R2 = -0.250422837205
+2016-12-26 17:15:01,609 [INFO ]  new Simulator created
+2016-12-26 17:15:01,683 [INFO ]  Start creating the dataset for O
+2016-12-26 17:15:30,970 [INFO ]  new Simulator created
+2016-12-26 17:15:31,037 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 17:15:31,152 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-26 17:15:31,519 [INFO ]  Start fitting the model Targets : Open_Ask_USDMXN : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:15:31,616 [INFO ]  Start GridSearchCV...
+2016-12-26 17:24:50,962 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 17:24:51,472 [INFO ]  R2 = 0.322704605647
+2016-12-26 17:24:51,618 [INFO ]  new Simulator created
+2016-12-26 17:24:51,694 [INFO ]  Start creating the dataset for Open_Ask_USDMXN
+2016-12-26 17:24:51,848 [INFO ]  Finished creating the dataset for Open_Ask_USDMXN
+2016-12-26 17:24:52,251 [INFO ]  Start fitting the model Targets : Open_Ask_USDMXN : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:24:52,360 [INFO ]  Start GridSearchCV...
+2016-12-26 17:27:37,626 [INFO ]  new Simulator created
+2016-12-26 17:27:37,671 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:27:37,780 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:27:38,139 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:27:38,240 [INFO ]  Start GridSearchCV...
+2016-12-26 17:37:42,413 [INFO ]  finished  fitting via GridSearchCV
+2016-12-26 17:37:42,927 [INFO ]  R2 = -0.784602377025
+2016-12-26 17:37:43,070 [INFO ]  new Simulator created
+2016-12-26 17:37:43,162 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:37:43,305 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:37:43,706 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:37:43,820 [INFO ]  Start GridSearchCV...
+2016-12-26 17:41:08,571 [INFO ]  new Simulator created
+2016-12-26 17:41:08,615 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:41:08,726 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:41:09,102 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:41:09,200 [INFO ]  Start GridSearchCV...
+2016-12-26 17:44:30,354 [INFO ]  new Simulator created
+2016-12-26 17:44:30,435 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:44:30,551 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-26 17:44:30,971 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-29 12:00:00-2011-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
+2016-12-26 17:44:31,082 [INFO ]  Start GridSearchCV...
