@@ -39,14 +39,14 @@ def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
     gs.fit(Xtrain, ytrain)
     print "BEST PARAMS", gs.best_params_
     best = gs.best_estimator_
-    pickle.dump(best, open(config.data_store_path +'predictions / model_{}.p".format(target), "wb"))
+    pickle.dump(best, open(config.data_store_path +'predictions / model_{}.p'.format(target), "wb"))
 
 
 def features_weight(simulator):
     model = pickle.load(
-        open(config.data_store_path +'predictions / model_{}.p".format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions / model_{}.p'.format(simulator.target), "rb"))
     dataset = pickle.load(
-        open(config.data_store_path +'predictions / dataset_{}.p".format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions / dataset_{}.p'.format(simulator.target), "rb"))
 
     df_weights = pd.DataFrame(
         model.booster().get_score().items(), columns=['index', 'weight'])
