@@ -33,7 +33,7 @@ def get_classifier_params():
 
 
 def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
-    gs = GridSearchCV(clf, param_grid=parameters, cv=n_folds)
+    gs = GridSearchCV(clf, param_grid=parameters, cv=n_folds, n_jobs=-1)
     gs.fit(Xtrain, ytrain)
     print "BEST PARAMS", gs.best_params_
     best = gs.best_estimator_
@@ -89,7 +89,7 @@ def predict(simulator):
     model = pickle.load(
         open(config.data_store_path + 'predictions/model_{}.p'.format(simulator.target), "rb"))
     dataset = pickle.load(
-        open('data/predictions/dataset_{}.p'.format(simulator.target), 'rb'))
+        open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'rb'))
 
     predictions = model.predict(dataset['forecast_X'])
     df_prediction = pd.DataFrame({'predicted': predictions, 'observed': dataset['observed_y']},

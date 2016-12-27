@@ -1,0 +1,2 @@
+2016-12-27 11:23:29,987 [INFO ]  new Simulator created
+2016-12-27 11:23:29,988 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
