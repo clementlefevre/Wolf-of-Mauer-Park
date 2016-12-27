@@ -1,11 +1,9 @@
 import pickle
 import config
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.grid_search import GridSearchCV
 import xgboost
 import logging
-from IPython.core.debugger import Tracer
 
 from service.train_forecast import create_dataset
 from model.models import Prediction
@@ -66,18 +64,6 @@ def fit_model(dataset, simulator):
         logging.info('finished  fitting via GridSearchCV')
 
 
-def plot_predictions(simulator):
-    fig, axes = plt.subplots(len(simulator.predictions), figsize=(12, 12))
-    fig.suptitle(
-        "XGBoost regressor with {0}steps in advance".format(simulator.shift))
-    fig.subplots_adjust(hspace=0.6, wspace=0.3)
-
-    for j, prediction in enumerate(simulator.predictions):
-        title = str(prediction)
-        df = prediction.df[simulator.shift:]
-        if not df.empty:
-
-            df.plot(ax=axes[j], title=title, lw=1)
 
 
 def dataset(simulator):
