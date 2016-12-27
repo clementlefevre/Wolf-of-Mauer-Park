@@ -11,10 +11,10 @@ from model.models import Prediction
 
 def get_classifier_params():
     clf = xgboost.XGBRegressor()
-    params = dict(max_depth=[10, 30, 60, 90, 300],
-                  learning_rate=[0.01, 0.1],
-                  n_estimators=[50, 100, 200],
-                  silent=[True],
+    params = dict(max_depth=[30],
+                  learning_rate=[0.1],
+                  n_estimators=[200],
+                  silent=[False],
                   objective=['reg:linear'],
                   nthread=[-1],
                   gamma=[0],
@@ -37,14 +37,14 @@ def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
     gs.fit(Xtrain, ytrain)
     print "BEST PARAMS", gs.best_params_
     best = gs.best_estimator_
-    pickle.dump(best, open(config.data_store_path +'predictions / model_{}.p'.format(target), "wb"))
+    pickle.dump(best, open(config.data_store_path +'predictions/model_{}.p'.format(target), "wb"))
 
 
 def features_weight(simulator):
     model = pickle.load(
-        open(config.data_store_path +'predictions / model_{}.p'.format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions/model_{}.p'.format(simulator.target), "rb"))
     dataset = pickle.load(
-        open(config.data_store_path +'predictions / dataset_{}.p'.format(simulator.target), "rb"))
+        open(config.data_store_path +'predictions/dataset_{}.p'.format(simulator.target), "rb"))
 
     df_weights = pd.DataFrame(
         model.booster().get_score().items(), columns=['index', 'weight'])

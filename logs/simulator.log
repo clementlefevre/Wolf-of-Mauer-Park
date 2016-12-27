@@ -515,3 +515,5 @@
 2016-12-27 07:55:04,275 [INFO ]  new Simulator created
 2016-12-27 07:55:04,276 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
 2016-12-27 07:56:12,680 [INFO ]  Start GridSearchCV...
+2016-12-27 09:41:49,322 [INFO ]  new Simulator created
+2016-12-27 09:41:49,322 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:3
