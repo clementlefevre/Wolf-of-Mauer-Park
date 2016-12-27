@@ -39,13 +39,15 @@ def add_pip(df, target):
 
 
 def add_previous_ticks(df, simulator):
-    cols = [col for col in df.columns.tolist()]
+    cols = [col for col in df.columns.tolist() if
+            simulator.target.split('_')[2] in col]
+    print 'cols of target : {}'.format(cols)
+    logging.info('ticks_to_shift : {}'.format(simulator.ticks_to_shift))
+    for col in cols:
+        for tick in simulator.ticks_to_shift:
 
-    for tick in simulator.ticks_to_shift:
-
-        df[simulator.target + '_shifted_' +
-            str(tick)] = df[col].shift(periods=tick)
-        logging.info('ticks : {} added for column :{}'.format(tick, simulator.target))
+            df[col + '_shifted_' +str(tick)] = df[col].shift(periods=tick)
+            logging.info('ticks : {} added for column :{}'.format(tick, col))
 
     df = df.fillna(0)
 
@@ -53,16 +55,17 @@ def add_previous_ticks(df, simulator):
 
 
 def clean_features(df, target):
+    target_root_name = target.split('_')[2]
     # Keep only regularized features
     features_col = [col for col in df.columns if (
         "reg" in col or "cal_" in col)]
-
+    logging.info('features col before target exlusion :{}'.format(features_col))
     # Exclude the target from features
     features_col = [col for col in features_col if (
-        target not in col or '_shifted' in col)]
+        target_root_name not in col or '_shifted' in col)]
     # Time index is not a feature
     features_col.remove('cal_time')
-
+    logging.info('Features selected: {}'.format(features_col))
     return features_col
 
 
@@ -70,7 +73,7 @@ def create_dataset(df, simulator):
     logging.info('Start creating the dataset for {}'.format(simulator.target))
 
     df = add_previous_ticks(df, simulator)
-
+    logging.info('df columns before train split : {}'.format(df.columns))
     X_y_dict = {}
     training_df, forecast_df = train_forecast_split(df, simulator.interval)
 

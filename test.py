@@ -14,10 +14,10 @@ cols =['Open_Ask_EURRUB', 'Open_Ask_USDRUB', 'Open_Ask_USDCAD', 'Open_Ask_LIGHTC
 
 def compute(targets):
     for target in targets:
-        for shift in range(3,6):
+        for shift in range(1,2):
             simulator = Simulator(dt_from='2016-09-29 12:00', dt_to='2016-09-29 12:30', target=target, shift=shift,fit_model=True,
-                         datasource_path='/drive_ext4/merged_no_spread.csv',ticks_to_shift=[1,2,3,4,5,10,20,30])
-            #regressor.dataset(simulator)
+                         datasource_path='/drive_ext4/merged_no_spread_light.csv',ticks_to_shift=[1,2,3,4,5,10,20,30])
+            regressor.dataset(simulator)
             regressor.fit(simulator)
             regressor.predict(simulator)
             print simulator.features_weight[:10]

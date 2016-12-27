@@ -533,3 +533,821 @@
 2016-12-27 13:25:37,898 [INFO ]  new Simulator created
 2016-12-27 13:25:37,898 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:4
 2016-12-27 13:26:13,775 [INFO ]  Start GridSearchCV...
+2016-12-27 13:52:58,509 [INFO ]  new Simulator created
+2016-12-27 13:53:06,281 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 13:53:06,285 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,287 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,289 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,291 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,294 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,296 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,298 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:06,300 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 13:53:07,354 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 13:53:07,381 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 13:53:16,732 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 13:53:19,121 [INFO ]  Start GridSearchCV...
+2016-12-27 13:58:19,632 [INFO ]  new Simulator created
+2016-12-27 13:58:27,347 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 13:58:27,351 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,353 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,355 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,357 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,359 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,361 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,363 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:27,365 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 13:58:28,459 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 13:58:28,487 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 13:58:37,533 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 13:58:39,924 [INFO ]  Start GridSearchCV...
+2016-12-27 14:01:49,025 [INFO ]  new Simulator created
+2016-12-27 14:01:56,871 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:01:56,875 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,877 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,879 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,881 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,884 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,886 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,888 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:56,890 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:01:57,943 [ERROR]  Error :
+2016-12-27 14:02:44,781 [INFO ]  new Simulator created
+2016-12-27 14:02:52,590 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:02:52,594 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,596 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,598 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,601 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,603 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,605 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,607 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:52,609 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:02:53,667 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:02:53,691 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:03:01,771 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 14:03:03,867 [INFO ]  Start GridSearchCV...
+2016-12-27 14:09:09,663 [INFO ]  new Simulator created
+2016-12-27 14:09:17,426 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:09:17,430 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,432 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,434 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,436 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,438 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,441 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,443 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:17,445 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:09:18,536 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:09:18,537 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:09:18,561 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:09:26,641 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 14:09:28,791 [INFO ]  Start GridSearchCV...
+2016-12-27 14:11:09,501 [INFO ]  new Simulator created
+2016-12-27 14:11:17,282 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:11:17,283 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:11:17,286 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,288 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,290 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,292 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,295 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,297 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,299 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:17,301 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:11:18,392 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:11:18,392 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:11:18,416 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:13:03,008 [INFO ]  new Simulator created
+2016-12-27 14:13:10,696 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:13:10,696 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:13:10,699 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,701 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,703 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,705 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,708 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,710 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,712 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:10,714 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:13:11,214 [INFO ]  df columns before train split : Index([u'Unnamed: 0', u'Unnamed: 0.1', u'cal_time', u'Open_Ask_EURRUB',
+       u'High_Ask_EURRUB', u'Low_Ask_EURRUB', u'Close_Ask_EURRUB',
+       u'Volume_Ask_EURRUB', u'Open_Bid_EURRUB', u'High_Bid_EURRUB',
+       ...
+       u'Close_Bid_BRENTCMDUSD_reg', u'Volume_Bid_BRENTCMDUSD_reg',
+       u'Open_Ask_EURRUB_shifted_1', u'Open_Ask_EURRUB_shifted_2',
+       u'Open_Ask_EURRUB_shifted_3', u'Open_Ask_EURRUB_shifted_4',
+       u'Open_Ask_EURRUB_shifted_5', u'Open_Ask_EURRUB_shifted_10',
+       u'Open_Ask_EURRUB_shifted_20', u'Open_Ask_EURRUB_shifted_30'],
+      dtype='object', length=175)
+2016-12-27 14:13:11,759 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:13:11,759 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:13:11,783 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:13:19,826 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 14:13:21,812 [INFO ]  Start GridSearchCV...
+2016-12-27 14:16:41,453 [INFO ]  new Simulator created
+2016-12-27 14:16:49,076 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:16:49,077 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:16:49,080 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,082 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,084 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,087 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,089 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,091 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,093 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,095 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,098 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,100 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,102 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,105 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,107 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,109 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,111 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,114 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,116 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,118 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,121 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,123 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,125 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,127 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,130 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,132 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,134 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,137 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,139 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,141 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,144 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,146 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,148 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,150 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,153 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,155 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,157 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,160 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,162 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,164 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,166 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,169 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,171 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,173 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,176 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,178 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,180 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,182 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,184 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,187 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,189 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,191 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,194 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,196 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,198 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,201 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,203 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,205 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,207 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,210 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,212 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,214 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,216 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,219 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,221 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,223 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,226 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,228 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,230 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,232 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,235 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,237 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,239 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,242 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,244 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,246 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,248 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,251 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,253 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,255 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,258 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,260 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,262 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,264 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,267 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,269 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,271 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,273 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,276 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,278 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,280 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,282 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,285 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,287 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,289 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,291 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,294 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,296 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,298 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,301 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,303 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,305 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,307 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,310 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,312 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,314 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,316 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,319 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,321 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,323 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,325 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,328 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,330 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,332 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,335 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,337 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,339 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,341 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,344 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,346 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,348 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,350 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,353 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,355 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,357 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,359 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,362 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,364 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,366 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,369 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,371 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,373 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,375 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,378 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,380 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,382 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,384 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,387 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,389 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,391 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,393 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,396 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,398 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,400 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,402 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,405 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,407 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,409 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,412 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,414 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,416 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,418 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,421 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,423 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,425 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,428 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,430 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,432 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,435 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,437 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,439 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,441 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:16:49,946 [INFO ]  df columns before train split : Index([u'Unnamed: 0', u'Unnamed: 0.1', u'cal_time', u'Open_Ask_EURRUB',
+       u'High_Ask_EURRUB', u'Low_Ask_EURRUB', u'Close_Ask_EURRUB',
+       u'Volume_Ask_EURRUB', u'Open_Bid_EURRUB', u'High_Bid_EURRUB',
+       ...
+       u'Close_Bid_BRENTCMDUSD_reg', u'Volume_Bid_BRENTCMDUSD_reg',
+       u'Open_Ask_EURRUB_shifted_1', u'Open_Ask_EURRUB_shifted_2',
+       u'Open_Ask_EURRUB_shifted_3', u'Open_Ask_EURRUB_shifted_4',
+       u'Open_Ask_EURRUB_shifted_5', u'Open_Ask_EURRUB_shifted_10',
+       u'Open_Ask_EURRUB_shifted_20', u'Open_Ask_EURRUB_shifted_30'],
+      dtype='object', length=175)
+2016-12-27 14:16:50,532 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:16:50,533 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:16:50,557 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:16:58,637 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 14:17:00,892 [INFO ]  Start GridSearchCV...
+2016-12-27 14:19:02,505 [INFO ]  new Simulator created
+2016-12-27 14:19:10,174 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:19:10,175 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:19:10,178 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,181 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,183 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,185 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,187 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,189 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,192 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,194 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,196 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,199 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,201 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,203 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,206 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,208 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,210 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,212 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,215 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,217 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,219 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,222 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,224 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,226 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,228 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,231 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,233 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,235 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,238 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,240 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,242 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,244 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,247 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,249 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,251 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,254 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,256 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,258 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,260 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,263 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,265 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,267 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,270 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,272 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,274 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,277 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,279 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,281 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,283 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,286 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,288 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,290 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,293 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,295 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,297 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,299 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,302 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,304 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,306 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,309 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,311 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,313 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,315 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,318 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,320 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,322 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,325 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,327 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,329 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,331 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,334 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,336 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,338 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,341 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,343 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,345 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,347 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,350 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,352 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,354 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,357 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,359 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,361 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,363 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,366 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,368 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,370 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,373 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,375 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,377 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,379 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,382 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,384 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,386 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,389 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,391 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,393 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,395 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,398 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,400 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,402 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,405 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,407 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,409 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,411 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,414 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,416 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,418 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,421 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,423 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,425 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,428 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,430 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,432 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,434 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,437 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,439 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,441 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,444 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,446 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,448 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,450 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,453 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,455 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,457 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,460 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,462 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,464 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,466 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,469 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,471 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,473 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,476 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,478 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,480 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,482 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,485 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,487 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,489 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,492 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,494 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,496 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,498 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,501 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,503 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,505 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,508 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,510 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,512 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,514 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,517 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,519 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,521 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,524 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,526 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,528 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,530 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,533 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,535 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,537 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,540 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:10,542 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:19:11,044 [INFO ]  df columns before train split : Index([u'Unnamed: 0', u'Unnamed: 0.1', u'cal_time', u'Open_Ask_EURRUB',
+       u'High_Ask_EURRUB', u'Low_Ask_EURRUB', u'Close_Ask_EURRUB',
+       u'Volume_Ask_EURRUB', u'Open_Bid_EURRUB', u'High_Bid_EURRUB',
+       ...
+       u'Close_Bid_BRENTCMDUSD_reg', u'Volume_Bid_BRENTCMDUSD_reg',
+       u'Open_Ask_EURRUB_shifted_1', u'Open_Ask_EURRUB_shifted_2',
+       u'Open_Ask_EURRUB_shifted_3', u'Open_Ask_EURRUB_shifted_4',
+       u'Open_Ask_EURRUB_shifted_5', u'Open_Ask_EURRUB_shifted_10',
+       u'Open_Ask_EURRUB_shifted_20', u'Open_Ask_EURRUB_shifted_30'],
+      dtype='object', length=175)
+2016-12-27 14:19:11,597 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:19:11,598 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg']
+2016-12-27 14:19:11,622 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:20:36,761 [INFO ]  new Simulator created
+2016-12-27 14:20:44,449 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:20:44,450 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:20:44,453 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,455 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,457 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,460 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,462 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,464 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,466 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,468 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:20:44,471 [INFO ]  ticks : 1 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,473 [INFO ]  ticks : 2 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,475 [INFO ]  ticks : 3 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,477 [INFO ]  ticks : 4 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,479 [INFO ]  ticks : 5 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,482 [INFO ]  ticks : 10 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,484 [INFO ]  ticks : 20 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,486 [INFO ]  ticks : 30 added for column :High_Ask_EURRUB
+2016-12-27 14:20:44,488 [INFO ]  ticks : 1 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,491 [INFO ]  ticks : 2 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,493 [INFO ]  ticks : 3 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,495 [INFO ]  ticks : 4 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,497 [INFO ]  ticks : 5 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,499 [INFO ]  ticks : 10 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,501 [INFO ]  ticks : 20 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,504 [INFO ]  ticks : 30 added for column :Low_Ask_EURRUB
+2016-12-27 14:20:44,506 [INFO ]  ticks : 1 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,508 [INFO ]  ticks : 2 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,510 [INFO ]  ticks : 3 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,512 [INFO ]  ticks : 4 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,515 [INFO ]  ticks : 5 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,517 [INFO ]  ticks : 10 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,519 [INFO ]  ticks : 20 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,521 [INFO ]  ticks : 30 added for column :Close_Ask_EURRUB
+2016-12-27 14:20:44,523 [INFO ]  ticks : 1 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,525 [INFO ]  ticks : 2 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,528 [INFO ]  ticks : 3 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,530 [INFO ]  ticks : 4 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,532 [INFO ]  ticks : 5 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,534 [INFO ]  ticks : 10 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,536 [INFO ]  ticks : 20 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,538 [INFO ]  ticks : 30 added for column :Volume_Ask_EURRUB
+2016-12-27 14:20:44,541 [INFO ]  ticks : 1 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,543 [INFO ]  ticks : 2 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,545 [INFO ]  ticks : 3 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,547 [INFO ]  ticks : 4 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,549 [INFO ]  ticks : 5 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,551 [INFO ]  ticks : 10 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,554 [INFO ]  ticks : 20 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,556 [INFO ]  ticks : 30 added for column :Open_Bid_EURRUB
+2016-12-27 14:20:44,558 [INFO ]  ticks : 1 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,560 [INFO ]  ticks : 2 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,562 [INFO ]  ticks : 3 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,564 [INFO ]  ticks : 4 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,567 [INFO ]  ticks : 5 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,569 [INFO ]  ticks : 10 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,571 [INFO ]  ticks : 20 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,573 [INFO ]  ticks : 30 added for column :High_Bid_EURRUB
+2016-12-27 14:20:44,575 [INFO ]  ticks : 1 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,578 [INFO ]  ticks : 2 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,580 [INFO ]  ticks : 3 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,582 [INFO ]  ticks : 4 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,584 [INFO ]  ticks : 5 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,586 [INFO ]  ticks : 10 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,588 [INFO ]  ticks : 20 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,591 [INFO ]  ticks : 30 added for column :Low_Bid_EURRUB
+2016-12-27 14:20:44,593 [INFO ]  ticks : 1 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,595 [INFO ]  ticks : 2 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,597 [INFO ]  ticks : 3 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,600 [INFO ]  ticks : 4 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,602 [INFO ]  ticks : 5 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,604 [INFO ]  ticks : 10 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,606 [INFO ]  ticks : 20 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,608 [INFO ]  ticks : 30 added for column :Close_Bid_EURRUB
+2016-12-27 14:20:44,611 [INFO ]  ticks : 1 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,613 [INFO ]  ticks : 2 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,615 [INFO ]  ticks : 3 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,617 [INFO ]  ticks : 4 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,619 [INFO ]  ticks : 5 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,622 [INFO ]  ticks : 10 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,624 [INFO ]  ticks : 20 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,626 [INFO ]  ticks : 30 added for column :Volume_Bid_EURRUB
+2016-12-27 14:20:44,628 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,631 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,633 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,635 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,637 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,639 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,642 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,644 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:20:44,646 [INFO ]  ticks : 1 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,648 [INFO ]  ticks : 2 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,650 [INFO ]  ticks : 3 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,653 [INFO ]  ticks : 4 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,655 [INFO ]  ticks : 5 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,657 [INFO ]  ticks : 10 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,659 [INFO ]  ticks : 20 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,662 [INFO ]  ticks : 30 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:20:44,664 [INFO ]  ticks : 1 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,096 [INFO ]  ticks : 2 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,099 [INFO ]  ticks : 3 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,101 [INFO ]  ticks : 4 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,103 [INFO ]  ticks : 5 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,105 [INFO ]  ticks : 10 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,108 [INFO ]  ticks : 20 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,110 [INFO ]  ticks : 30 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:20:45,112 [INFO ]  ticks : 1 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,114 [INFO ]  ticks : 2 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,116 [INFO ]  ticks : 3 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,119 [INFO ]  ticks : 4 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,121 [INFO ]  ticks : 5 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,123 [INFO ]  ticks : 10 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,125 [INFO ]  ticks : 20 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,127 [INFO ]  ticks : 30 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:20:45,130 [INFO ]  ticks : 1 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,132 [INFO ]  ticks : 2 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,134 [INFO ]  ticks : 3 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,136 [INFO ]  ticks : 4 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,139 [INFO ]  ticks : 5 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,141 [INFO ]  ticks : 10 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,143 [INFO ]  ticks : 20 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,145 [INFO ]  ticks : 30 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:20:45,147 [INFO ]  ticks : 1 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,150 [INFO ]  ticks : 2 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,152 [INFO ]  ticks : 3 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,154 [INFO ]  ticks : 4 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,156 [INFO ]  ticks : 5 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,158 [INFO ]  ticks : 10 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,161 [INFO ]  ticks : 20 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,163 [INFO ]  ticks : 30 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:20:45,165 [INFO ]  ticks : 1 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,167 [INFO ]  ticks : 2 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,169 [INFO ]  ticks : 3 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,172 [INFO ]  ticks : 4 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,174 [INFO ]  ticks : 5 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,176 [INFO ]  ticks : 10 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,178 [INFO ]  ticks : 20 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,180 [INFO ]  ticks : 30 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:20:45,183 [INFO ]  ticks : 1 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,185 [INFO ]  ticks : 2 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,187 [INFO ]  ticks : 3 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,189 [INFO ]  ticks : 4 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,191 [INFO ]  ticks : 5 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,194 [INFO ]  ticks : 10 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,196 [INFO ]  ticks : 20 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,198 [INFO ]  ticks : 30 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:20:45,200 [INFO ]  ticks : 1 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,202 [INFO ]  ticks : 2 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,205 [INFO ]  ticks : 3 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,207 [INFO ]  ticks : 4 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,209 [INFO ]  ticks : 5 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,211 [INFO ]  ticks : 10 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,213 [INFO ]  ticks : 20 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,216 [INFO ]  ticks : 30 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:20:45,218 [INFO ]  ticks : 1 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,220 [INFO ]  ticks : 2 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,222 [INFO ]  ticks : 3 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,224 [INFO ]  ticks : 4 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,226 [INFO ]  ticks : 5 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,229 [INFO ]  ticks : 10 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,231 [INFO ]  ticks : 20 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:45,233 [INFO ]  ticks : 30 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:20:46,189 [INFO ]  df columns before train split : Index([u'Unnamed: 0', u'Unnamed: 0.1', u'cal_time', u'Open_Ask_EURRUB',
+       u'High_Ask_EURRUB', u'Low_Ask_EURRUB', u'Close_Ask_EURRUB',
+       u'Volume_Ask_EURRUB', u'Open_Bid_EURRUB', u'High_Bid_EURRUB',
+       ...
+       u'Close_Bid_EURRUB_reg_shifted_20', u'Close_Bid_EURRUB_reg_shifted_30',
+       u'Volume_Bid_EURRUB_reg_shifted_1', u'Volume_Bid_EURRUB_reg_shifted_2',
+       u'Volume_Bid_EURRUB_reg_shifted_3', u'Volume_Bid_EURRUB_reg_shifted_4',
+       u'Volume_Bid_EURRUB_reg_shifted_5', u'Volume_Bid_EURRUB_reg_shifted_10',
+       u'Volume_Bid_EURRUB_reg_shifted_20',
+       u'Volume_Bid_EURRUB_reg_shifted_30'],
+      dtype='object', length=327)
+2016-12-27 14:20:47,224 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg', 'Open_Ask_EURRUB_reg_shifted_1', 'Open_Ask_EURRUB_reg_shifted_2', 'Open_Ask_EURRUB_reg_shifted_3', 'Open_Ask_EURRUB_reg_shifted_4', 'Open_Ask_EURRUB_reg_shifted_5', 'Open_Ask_EURRUB_reg_shifted_10', 'Open_Ask_EURRUB_reg_shifted_20', 'Open_Ask_EURRUB_reg_shifted_30', 'High_Ask_EURRUB_reg_shifted_1', 'High_Ask_EURRUB_reg_shifted_2', 'High_Ask_EURRUB_reg_shifted_3', 'High_Ask_EURRUB_reg_shifted_4', 'High_Ask_EURRUB_reg_shifted_5', 'High_Ask_EURRUB_reg_shifted_10', 'High_Ask_EURRUB_reg_shifted_20', 'High_Ask_EURRUB_reg_shifted_30', 'Low_Ask_EURRUB_reg_shifted_1', 'Low_Ask_EURRUB_reg_shifted_2', 'Low_Ask_EURRUB_reg_shifted_3', 'Low_Ask_EURRUB_reg_shifted_4', 'Low_Ask_EURRUB_reg_shifted_5', 'Low_Ask_EURRUB_reg_shifted_10', 'Low_Ask_EURRUB_reg_shifted_20', 'Low_Ask_EURRUB_reg_shifted_30', 'Close_Ask_EURRUB_reg_shifted_1', 'Close_Ask_EURRUB_reg_shifted_2', 'Close_Ask_EURRUB_reg_shifted_3', 'Close_Ask_EURRUB_reg_shifted_4', 'Close_Ask_EURRUB_reg_shifted_5', 'Close_Ask_EURRUB_reg_shifted_10', 'Close_Ask_EURRUB_reg_shifted_20', 'Close_Ask_EURRUB_reg_shifted_30', 'Volume_Ask_EURRUB_reg_shifted_1', 'Volume_Ask_EURRUB_reg_shifted_2', 'Volume_Ask_EURRUB_reg_shifted_3', 'Volume_Ask_EURRUB_reg_shifted_4', 'Volume_Ask_EURRUB_reg_shifted_5', 'Volume_Ask_EURRUB_reg_shifted_10', 'Volume_Ask_EURRUB_reg_shifted_20', 'Volume_Ask_EURRUB_reg_shifted_30', 'Open_Bid_EURRUB_reg_shifted_1', 'Open_Bid_EURRUB_reg_shifted_2', 'Open_Bid_EURRUB_reg_shifted_3', 'Open_Bid_EURRUB_reg_shifted_4', 'Open_Bid_EURRUB_reg_shifted_5', 'Open_Bid_EURRUB_reg_shifted_10', 'Open_Bid_EURRUB_reg_shifted_20', 'Open_Bid_EURRUB_reg_shifted_30', 'High_Bid_EURRUB_reg_shifted_1', 'High_Bid_EURRUB_reg_shifted_2', 'High_Bid_EURRUB_reg_shifted_3', 'High_Bid_EURRUB_reg_shifted_4', 'High_Bid_EURRUB_reg_shifted_5', 'High_Bid_EURRUB_reg_shifted_10', 'High_Bid_EURRUB_reg_shifted_20', 'High_Bid_EURRUB_reg_shifted_30', 'Low_Bid_EURRUB_reg_shifted_1', 'Low_Bid_EURRUB_reg_shifted_2', 'Low_Bid_EURRUB_reg_shifted_3', 'Low_Bid_EURRUB_reg_shifted_4', 'Low_Bid_EURRUB_reg_shifted_5', 'Low_Bid_EURRUB_reg_shifted_10', 'Low_Bid_EURRUB_reg_shifted_20', 'Low_Bid_EURRUB_reg_shifted_30', 'Close_Bid_EURRUB_reg_shifted_1', 'Close_Bid_EURRUB_reg_shifted_2', 'Close_Bid_EURRUB_reg_shifted_3', 'Close_Bid_EURRUB_reg_shifted_4', 'Close_Bid_EURRUB_reg_shifted_5', 'Close_Bid_EURRUB_reg_shifted_10', 'Close_Bid_EURRUB_reg_shifted_20', 'Close_Bid_EURRUB_reg_shifted_30', 'Volume_Bid_EURRUB_reg_shifted_1', 'Volume_Bid_EURRUB_reg_shifted_2', 'Volume_Bid_EURRUB_reg_shifted_3', 'Volume_Bid_EURRUB_reg_shifted_4', 'Volume_Bid_EURRUB_reg_shifted_5', 'Volume_Bid_EURRUB_reg_shifted_10', 'Volume_Bid_EURRUB_reg_shifted_20', 'Volume_Bid_EURRUB_reg_shifted_30']
+2016-12-27 14:20:47,225 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg', 'Open_Ask_EURRUB_reg_shifted_1', 'Open_Ask_EURRUB_reg_shifted_2', 'Open_Ask_EURRUB_reg_shifted_3', 'Open_Ask_EURRUB_reg_shifted_4', 'Open_Ask_EURRUB_reg_shifted_5', 'Open_Ask_EURRUB_reg_shifted_10', 'Open_Ask_EURRUB_reg_shifted_20', 'Open_Ask_EURRUB_reg_shifted_30', 'High_Ask_EURRUB_reg_shifted_1', 'High_Ask_EURRUB_reg_shifted_2', 'High_Ask_EURRUB_reg_shifted_3', 'High_Ask_EURRUB_reg_shifted_4', 'High_Ask_EURRUB_reg_shifted_5', 'High_Ask_EURRUB_reg_shifted_10', 'High_Ask_EURRUB_reg_shifted_20', 'High_Ask_EURRUB_reg_shifted_30', 'Low_Ask_EURRUB_reg_shifted_1', 'Low_Ask_EURRUB_reg_shifted_2', 'Low_Ask_EURRUB_reg_shifted_3', 'Low_Ask_EURRUB_reg_shifted_4', 'Low_Ask_EURRUB_reg_shifted_5', 'Low_Ask_EURRUB_reg_shifted_10', 'Low_Ask_EURRUB_reg_shifted_20', 'Low_Ask_EURRUB_reg_shifted_30', 'Close_Ask_EURRUB_reg_shifted_1', 'Close_Ask_EURRUB_reg_shifted_2', 'Close_Ask_EURRUB_reg_shifted_3', 'Close_Ask_EURRUB_reg_shifted_4', 'Close_Ask_EURRUB_reg_shifted_5', 'Close_Ask_EURRUB_reg_shifted_10', 'Close_Ask_EURRUB_reg_shifted_20', 'Close_Ask_EURRUB_reg_shifted_30', 'Volume_Ask_EURRUB_reg_shifted_1', 'Volume_Ask_EURRUB_reg_shifted_2', 'Volume_Ask_EURRUB_reg_shifted_3', 'Volume_Ask_EURRUB_reg_shifted_4', 'Volume_Ask_EURRUB_reg_shifted_5', 'Volume_Ask_EURRUB_reg_shifted_10', 'Volume_Ask_EURRUB_reg_shifted_20', 'Volume_Ask_EURRUB_reg_shifted_30', 'Open_Bid_EURRUB_reg_shifted_1', 'Open_Bid_EURRUB_reg_shifted_2', 'Open_Bid_EURRUB_reg_shifted_3', 'Open_Bid_EURRUB_reg_shifted_4', 'Open_Bid_EURRUB_reg_shifted_5', 'Open_Bid_EURRUB_reg_shifted_10', 'Open_Bid_EURRUB_reg_shifted_20', 'Open_Bid_EURRUB_reg_shifted_30', 'High_Bid_EURRUB_reg_shifted_1', 'High_Bid_EURRUB_reg_shifted_2', 'High_Bid_EURRUB_reg_shifted_3', 'High_Bid_EURRUB_reg_shifted_4', 'High_Bid_EURRUB_reg_shifted_5', 'High_Bid_EURRUB_reg_shifted_10', 'High_Bid_EURRUB_reg_shifted_20', 'High_Bid_EURRUB_reg_shifted_30', 'Low_Bid_EURRUB_reg_shifted_1', 'Low_Bid_EURRUB_reg_shifted_2', 'Low_Bid_EURRUB_reg_shifted_3', 'Low_Bid_EURRUB_reg_shifted_4', 'Low_Bid_EURRUB_reg_shifted_5', 'Low_Bid_EURRUB_reg_shifted_10', 'Low_Bid_EURRUB_reg_shifted_20', 'Low_Bid_EURRUB_reg_shifted_30', 'Close_Bid_EURRUB_reg_shifted_1', 'Close_Bid_EURRUB_reg_shifted_2', 'Close_Bid_EURRUB_reg_shifted_3', 'Close_Bid_EURRUB_reg_shifted_4', 'Close_Bid_EURRUB_reg_shifted_5', 'Close_Bid_EURRUB_reg_shifted_10', 'Close_Bid_EURRUB_reg_shifted_20', 'Close_Bid_EURRUB_reg_shifted_30', 'Volume_Bid_EURRUB_reg_shifted_1', 'Volume_Bid_EURRUB_reg_shifted_2', 'Volume_Bid_EURRUB_reg_shifted_3', 'Volume_Bid_EURRUB_reg_shifted_4', 'Volume_Bid_EURRUB_reg_shifted_5', 'Volume_Bid_EURRUB_reg_shifted_10', 'Volume_Bid_EURRUB_reg_shifted_20', 'Volume_Bid_EURRUB_reg_shifted_30']
+2016-12-27 14:20:47,278 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:21:03,298 [INFO ]  new Simulator created
+2016-12-27 14:21:10,928 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:21:10,929 [INFO ]  ticks_to_shift : [1, 2, 3, 4, 5, 10, 20, 30]
+2016-12-27 14:21:10,932 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,934 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,936 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,938 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,941 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,943 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,945 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,947 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB
+2016-12-27 14:21:10,949 [INFO ]  ticks : 1 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,952 [INFO ]  ticks : 2 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,954 [INFO ]  ticks : 3 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,956 [INFO ]  ticks : 4 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,958 [INFO ]  ticks : 5 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,960 [INFO ]  ticks : 10 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,962 [INFO ]  ticks : 20 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,965 [INFO ]  ticks : 30 added for column :High_Ask_EURRUB
+2016-12-27 14:21:10,967 [INFO ]  ticks : 1 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,969 [INFO ]  ticks : 2 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,971 [INFO ]  ticks : 3 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,973 [INFO ]  ticks : 4 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,975 [INFO ]  ticks : 5 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,977 [INFO ]  ticks : 10 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,980 [INFO ]  ticks : 20 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,982 [INFO ]  ticks : 30 added for column :Low_Ask_EURRUB
+2016-12-27 14:21:10,984 [INFO ]  ticks : 1 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,986 [INFO ]  ticks : 2 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,988 [INFO ]  ticks : 3 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,990 [INFO ]  ticks : 4 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,993 [INFO ]  ticks : 5 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,995 [INFO ]  ticks : 10 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,997 [INFO ]  ticks : 20 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:10,999 [INFO ]  ticks : 30 added for column :Close_Ask_EURRUB
+2016-12-27 14:21:11,001 [INFO ]  ticks : 1 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,003 [INFO ]  ticks : 2 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,005 [INFO ]  ticks : 3 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,008 [INFO ]  ticks : 4 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,010 [INFO ]  ticks : 5 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,012 [INFO ]  ticks : 10 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,014 [INFO ]  ticks : 20 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,016 [INFO ]  ticks : 30 added for column :Volume_Ask_EURRUB
+2016-12-27 14:21:11,018 [INFO ]  ticks : 1 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,020 [INFO ]  ticks : 2 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,023 [INFO ]  ticks : 3 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,025 [INFO ]  ticks : 4 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,027 [INFO ]  ticks : 5 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,029 [INFO ]  ticks : 10 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,031 [INFO ]  ticks : 20 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,033 [INFO ]  ticks : 30 added for column :Open_Bid_EURRUB
+2016-12-27 14:21:11,036 [INFO ]  ticks : 1 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,038 [INFO ]  ticks : 2 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,040 [INFO ]  ticks : 3 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,042 [INFO ]  ticks : 4 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,044 [INFO ]  ticks : 5 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,046 [INFO ]  ticks : 10 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,049 [INFO ]  ticks : 20 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,051 [INFO ]  ticks : 30 added for column :High_Bid_EURRUB
+2016-12-27 14:21:11,053 [INFO ]  ticks : 1 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,055 [INFO ]  ticks : 2 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,057 [INFO ]  ticks : 3 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,059 [INFO ]  ticks : 4 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,062 [INFO ]  ticks : 5 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,064 [INFO ]  ticks : 10 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,066 [INFO ]  ticks : 20 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,068 [INFO ]  ticks : 30 added for column :Low_Bid_EURRUB
+2016-12-27 14:21:11,070 [INFO ]  ticks : 1 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,073 [INFO ]  ticks : 2 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,075 [INFO ]  ticks : 3 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,077 [INFO ]  ticks : 4 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,079 [INFO ]  ticks : 5 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,081 [INFO ]  ticks : 10 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,084 [INFO ]  ticks : 20 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,086 [INFO ]  ticks : 30 added for column :Close_Bid_EURRUB
+2016-12-27 14:21:11,088 [INFO ]  ticks : 1 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,090 [INFO ]  ticks : 2 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,093 [INFO ]  ticks : 3 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,095 [INFO ]  ticks : 4 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,097 [INFO ]  ticks : 5 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,099 [INFO ]  ticks : 10 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,101 [INFO ]  ticks : 20 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,103 [INFO ]  ticks : 30 added for column :Volume_Bid_EURRUB
+2016-12-27 14:21:11,106 [INFO ]  ticks : 1 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,108 [INFO ]  ticks : 2 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,110 [INFO ]  ticks : 3 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,112 [INFO ]  ticks : 4 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,114 [INFO ]  ticks : 5 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,117 [INFO ]  ticks : 10 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,119 [INFO ]  ticks : 20 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,121 [INFO ]  ticks : 30 added for column :Open_Ask_EURRUB_reg
+2016-12-27 14:21:11,123 [INFO ]  ticks : 1 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,125 [INFO ]  ticks : 2 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,128 [INFO ]  ticks : 3 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,130 [INFO ]  ticks : 4 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,132 [INFO ]  ticks : 5 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,134 [INFO ]  ticks : 10 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,137 [INFO ]  ticks : 20 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,139 [INFO ]  ticks : 30 added for column :High_Ask_EURRUB_reg
+2016-12-27 14:21:11,141 [INFO ]  ticks : 1 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,575 [INFO ]  ticks : 2 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,577 [INFO ]  ticks : 3 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,579 [INFO ]  ticks : 4 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,582 [INFO ]  ticks : 5 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,584 [INFO ]  ticks : 10 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,586 [INFO ]  ticks : 20 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,588 [INFO ]  ticks : 30 added for column :Low_Ask_EURRUB_reg
+2016-12-27 14:21:11,590 [INFO ]  ticks : 1 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,592 [INFO ]  ticks : 2 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,594 [INFO ]  ticks : 3 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,597 [INFO ]  ticks : 4 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,599 [INFO ]  ticks : 5 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,601 [INFO ]  ticks : 10 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,603 [INFO ]  ticks : 20 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,605 [INFO ]  ticks : 30 added for column :Close_Ask_EURRUB_reg
+2016-12-27 14:21:11,607 [INFO ]  ticks : 1 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,609 [INFO ]  ticks : 2 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,612 [INFO ]  ticks : 3 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,614 [INFO ]  ticks : 4 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,616 [INFO ]  ticks : 5 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,618 [INFO ]  ticks : 10 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,620 [INFO ]  ticks : 20 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,622 [INFO ]  ticks : 30 added for column :Volume_Ask_EURRUB_reg
+2016-12-27 14:21:11,624 [INFO ]  ticks : 1 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,627 [INFO ]  ticks : 2 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,629 [INFO ]  ticks : 3 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,631 [INFO ]  ticks : 4 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,633 [INFO ]  ticks : 5 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,635 [INFO ]  ticks : 10 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,637 [INFO ]  ticks : 20 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,640 [INFO ]  ticks : 30 added for column :Open_Bid_EURRUB_reg
+2016-12-27 14:21:11,642 [INFO ]  ticks : 1 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,644 [INFO ]  ticks : 2 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,646 [INFO ]  ticks : 3 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,648 [INFO ]  ticks : 4 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,650 [INFO ]  ticks : 5 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,652 [INFO ]  ticks : 10 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,655 [INFO ]  ticks : 20 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,657 [INFO ]  ticks : 30 added for column :High_Bid_EURRUB_reg
+2016-12-27 14:21:11,659 [INFO ]  ticks : 1 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,661 [INFO ]  ticks : 2 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,663 [INFO ]  ticks : 3 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,665 [INFO ]  ticks : 4 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,668 [INFO ]  ticks : 5 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,670 [INFO ]  ticks : 10 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,672 [INFO ]  ticks : 20 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,674 [INFO ]  ticks : 30 added for column :Low_Bid_EURRUB_reg
+2016-12-27 14:21:11,676 [INFO ]  ticks : 1 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,678 [INFO ]  ticks : 2 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,680 [INFO ]  ticks : 3 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,683 [INFO ]  ticks : 4 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,685 [INFO ]  ticks : 5 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,687 [INFO ]  ticks : 10 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,689 [INFO ]  ticks : 20 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,691 [INFO ]  ticks : 30 added for column :Close_Bid_EURRUB_reg
+2016-12-27 14:21:11,693 [INFO ]  ticks : 1 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,695 [INFO ]  ticks : 2 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,698 [INFO ]  ticks : 3 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,700 [INFO ]  ticks : 4 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,702 [INFO ]  ticks : 5 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,704 [INFO ]  ticks : 10 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,706 [INFO ]  ticks : 20 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:11,709 [INFO ]  ticks : 30 added for column :Volume_Bid_EURRUB_reg
+2016-12-27 14:21:12,649 [INFO ]  df columns before train split : Index([u'Unnamed: 0', u'Unnamed: 0.1', u'cal_time', u'Open_Ask_EURRUB',
+       u'High_Ask_EURRUB', u'Low_Ask_EURRUB', u'Close_Ask_EURRUB',
+       u'Volume_Ask_EURRUB', u'Open_Bid_EURRUB', u'High_Bid_EURRUB',
+       ...
+       u'Close_Bid_EURRUB_reg_shifted_20', u'Close_Bid_EURRUB_reg_shifted_30',
+       u'Volume_Bid_EURRUB_reg_shifted_1', u'Volume_Bid_EURRUB_reg_shifted_2',
+       u'Volume_Bid_EURRUB_reg_shifted_3', u'Volume_Bid_EURRUB_reg_shifted_4',
+       u'Volume_Bid_EURRUB_reg_shifted_5', u'Volume_Bid_EURRUB_reg_shifted_10',
+       u'Volume_Bid_EURRUB_reg_shifted_20',
+       u'Volume_Bid_EURRUB_reg_shifted_30'],
+      dtype='object', length=327)
+2016-12-27 14:21:13,676 [INFO ]  features col before target exlusion :['cal_time', 'cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_EURRUB_reg', 'High_Ask_EURRUB_reg', 'Low_Ask_EURRUB_reg', 'Close_Ask_EURRUB_reg', 'Volume_Ask_EURRUB_reg', 'Open_Bid_EURRUB_reg', 'High_Bid_EURRUB_reg', 'Low_Bid_EURRUB_reg', 'Close_Bid_EURRUB_reg', 'Volume_Bid_EURRUB_reg', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg', 'Open_Ask_EURRUB_reg_shifted_1', 'Open_Ask_EURRUB_reg_shifted_2', 'Open_Ask_EURRUB_reg_shifted_3', 'Open_Ask_EURRUB_reg_shifted_4', 'Open_Ask_EURRUB_reg_shifted_5', 'Open_Ask_EURRUB_reg_shifted_10', 'Open_Ask_EURRUB_reg_shifted_20', 'Open_Ask_EURRUB_reg_shifted_30', 'High_Ask_EURRUB_reg_shifted_1', 'High_Ask_EURRUB_reg_shifted_2', 'High_Ask_EURRUB_reg_shifted_3', 'High_Ask_EURRUB_reg_shifted_4', 'High_Ask_EURRUB_reg_shifted_5', 'High_Ask_EURRUB_reg_shifted_10', 'High_Ask_EURRUB_reg_shifted_20', 'High_Ask_EURRUB_reg_shifted_30', 'Low_Ask_EURRUB_reg_shifted_1', 'Low_Ask_EURRUB_reg_shifted_2', 'Low_Ask_EURRUB_reg_shifted_3', 'Low_Ask_EURRUB_reg_shifted_4', 'Low_Ask_EURRUB_reg_shifted_5', 'Low_Ask_EURRUB_reg_shifted_10', 'Low_Ask_EURRUB_reg_shifted_20', 'Low_Ask_EURRUB_reg_shifted_30', 'Close_Ask_EURRUB_reg_shifted_1', 'Close_Ask_EURRUB_reg_shifted_2', 'Close_Ask_EURRUB_reg_shifted_3', 'Close_Ask_EURRUB_reg_shifted_4', 'Close_Ask_EURRUB_reg_shifted_5', 'Close_Ask_EURRUB_reg_shifted_10', 'Close_Ask_EURRUB_reg_shifted_20', 'Close_Ask_EURRUB_reg_shifted_30', 'Volume_Ask_EURRUB_reg_shifted_1', 'Volume_Ask_EURRUB_reg_shifted_2', 'Volume_Ask_EURRUB_reg_shifted_3', 'Volume_Ask_EURRUB_reg_shifted_4', 'Volume_Ask_EURRUB_reg_shifted_5', 'Volume_Ask_EURRUB_reg_shifted_10', 'Volume_Ask_EURRUB_reg_shifted_20', 'Volume_Ask_EURRUB_reg_shifted_30', 'Open_Bid_EURRUB_reg_shifted_1', 'Open_Bid_EURRUB_reg_shifted_2', 'Open_Bid_EURRUB_reg_shifted_3', 'Open_Bid_EURRUB_reg_shifted_4', 'Open_Bid_EURRUB_reg_shifted_5', 'Open_Bid_EURRUB_reg_shifted_10', 'Open_Bid_EURRUB_reg_shifted_20', 'Open_Bid_EURRUB_reg_shifted_30', 'High_Bid_EURRUB_reg_shifted_1', 'High_Bid_EURRUB_reg_shifted_2', 'High_Bid_EURRUB_reg_shifted_3', 'High_Bid_EURRUB_reg_shifted_4', 'High_Bid_EURRUB_reg_shifted_5', 'High_Bid_EURRUB_reg_shifted_10', 'High_Bid_EURRUB_reg_shifted_20', 'High_Bid_EURRUB_reg_shifted_30', 'Low_Bid_EURRUB_reg_shifted_1', 'Low_Bid_EURRUB_reg_shifted_2', 'Low_Bid_EURRUB_reg_shifted_3', 'Low_Bid_EURRUB_reg_shifted_4', 'Low_Bid_EURRUB_reg_shifted_5', 'Low_Bid_EURRUB_reg_shifted_10', 'Low_Bid_EURRUB_reg_shifted_20', 'Low_Bid_EURRUB_reg_shifted_30', 'Close_Bid_EURRUB_reg_shifted_1', 'Close_Bid_EURRUB_reg_shifted_2', 'Close_Bid_EURRUB_reg_shifted_3', 'Close_Bid_EURRUB_reg_shifted_4', 'Close_Bid_EURRUB_reg_shifted_5', 'Close_Bid_EURRUB_reg_shifted_10', 'Close_Bid_EURRUB_reg_shifted_20', 'Close_Bid_EURRUB_reg_shifted_30', 'Volume_Bid_EURRUB_reg_shifted_1', 'Volume_Bid_EURRUB_reg_shifted_2', 'Volume_Bid_EURRUB_reg_shifted_3', 'Volume_Bid_EURRUB_reg_shifted_4', 'Volume_Bid_EURRUB_reg_shifted_5', 'Volume_Bid_EURRUB_reg_shifted_10', 'Volume_Bid_EURRUB_reg_shifted_20', 'Volume_Bid_EURRUB_reg_shifted_30']
+2016-12-27 14:21:13,676 [INFO ]  Features selected: ['cal_hour', 'cal_minute', 'cal_dayofweek', 'cal_dayofyear', 'Open_Ask_USDRUB_reg', 'High_Ask_USDRUB_reg', 'Low_Ask_USDRUB_reg', 'Close_Ask_USDRUB_reg', 'Volume_Ask_USDRUB_reg', 'Open_Bid_USDRUB_reg', 'High_Bid_USDRUB_reg', 'Low_Bid_USDRUB_reg', 'Close_Bid_USDRUB_reg', 'Volume_Bid_USDRUB_reg', 'Open_Ask_USDCAD_reg', 'High_Ask_USDCAD_reg', 'Low_Ask_USDCAD_reg', 'Close_Ask_USDCAD_reg', 'Volume_Ask_USDCAD_reg', 'Open_Bid_USDCAD_reg', 'High_Bid_USDCAD_reg', 'Low_Bid_USDCAD_reg', 'Close_Bid_USDCAD_reg', 'Volume_Bid_USDCAD_reg', 'Open_Ask_LIGHTCMDUSD_reg', 'High_Ask_LIGHTCMDUSD_reg', 'Low_Ask_LIGHTCMDUSD_reg', 'Close_Ask_LIGHTCMDUSD_reg', 'Volume_Ask_LIGHTCMDUSD_reg', 'Open_Bid_LIGHTCMDUSD_reg', 'High_Bid_LIGHTCMDUSD_reg', 'Low_Bid_LIGHTCMDUSD_reg', 'Close_Bid_LIGHTCMDUSD_reg', 'Volume_Bid_LIGHTCMDUSD_reg', 'Open_Ask_USDMXN_reg', 'High_Ask_USDMXN_reg', 'Low_Ask_USDMXN_reg', 'Close_Ask_USDMXN_reg', 'Volume_Ask_USDMXN_reg', 'Open_Bid_USDMXN_reg', 'High_Bid_USDMXN_reg', 'Low_Bid_USDMXN_reg', 'Close_Bid_USDMXN_reg', 'Volume_Bid_USDMXN_reg', 'Open_Ask_EURNOK_reg', 'High_Ask_EURNOK_reg', 'Low_Ask_EURNOK_reg', 'Close_Ask_EURNOK_reg', 'Volume_Ask_EURNOK_reg', 'Open_Bid_EURNOK_reg', 'High_Bid_EURNOK_reg', 'Low_Bid_EURNOK_reg', 'Close_Bid_EURNOK_reg', 'Volume_Bid_EURNOK_reg', 'Open_Ask_USDNOK_reg', 'High_Ask_USDNOK_reg', 'Low_Ask_USDNOK_reg', 'Close_Ask_USDNOK_reg', 'Volume_Ask_USDNOK_reg', 'Open_Bid_USDNOK_reg', 'High_Bid_USDNOK_reg', 'Low_Bid_USDNOK_reg', 'Close_Bid_USDNOK_reg', 'Volume_Bid_USDNOK_reg', 'Open_Ask_BRENTCMDUSD_reg', 'High_Ask_BRENTCMDUSD_reg', 'Low_Ask_BRENTCMDUSD_reg', 'Close_Ask_BRENTCMDUSD_reg', 'Volume_Ask_BRENTCMDUSD_reg', 'Open_Bid_BRENTCMDUSD_reg', 'High_Bid_BRENTCMDUSD_reg', 'Low_Bid_BRENTCMDUSD_reg', 'Close_Bid_BRENTCMDUSD_reg', 'Volume_Bid_BRENTCMDUSD_reg', 'Open_Ask_EURRUB_reg_shifted_1', 'Open_Ask_EURRUB_reg_shifted_2', 'Open_Ask_EURRUB_reg_shifted_3', 'Open_Ask_EURRUB_reg_shifted_4', 'Open_Ask_EURRUB_reg_shifted_5', 'Open_Ask_EURRUB_reg_shifted_10', 'Open_Ask_EURRUB_reg_shifted_20', 'Open_Ask_EURRUB_reg_shifted_30', 'High_Ask_EURRUB_reg_shifted_1', 'High_Ask_EURRUB_reg_shifted_2', 'High_Ask_EURRUB_reg_shifted_3', 'High_Ask_EURRUB_reg_shifted_4', 'High_Ask_EURRUB_reg_shifted_5', 'High_Ask_EURRUB_reg_shifted_10', 'High_Ask_EURRUB_reg_shifted_20', 'High_Ask_EURRUB_reg_shifted_30', 'Low_Ask_EURRUB_reg_shifted_1', 'Low_Ask_EURRUB_reg_shifted_2', 'Low_Ask_EURRUB_reg_shifted_3', 'Low_Ask_EURRUB_reg_shifted_4', 'Low_Ask_EURRUB_reg_shifted_5', 'Low_Ask_EURRUB_reg_shifted_10', 'Low_Ask_EURRUB_reg_shifted_20', 'Low_Ask_EURRUB_reg_shifted_30', 'Close_Ask_EURRUB_reg_shifted_1', 'Close_Ask_EURRUB_reg_shifted_2', 'Close_Ask_EURRUB_reg_shifted_3', 'Close_Ask_EURRUB_reg_shifted_4', 'Close_Ask_EURRUB_reg_shifted_5', 'Close_Ask_EURRUB_reg_shifted_10', 'Close_Ask_EURRUB_reg_shifted_20', 'Close_Ask_EURRUB_reg_shifted_30', 'Volume_Ask_EURRUB_reg_shifted_1', 'Volume_Ask_EURRUB_reg_shifted_2', 'Volume_Ask_EURRUB_reg_shifted_3', 'Volume_Ask_EURRUB_reg_shifted_4', 'Volume_Ask_EURRUB_reg_shifted_5', 'Volume_Ask_EURRUB_reg_shifted_10', 'Volume_Ask_EURRUB_reg_shifted_20', 'Volume_Ask_EURRUB_reg_shifted_30', 'Open_Bid_EURRUB_reg_shifted_1', 'Open_Bid_EURRUB_reg_shifted_2', 'Open_Bid_EURRUB_reg_shifted_3', 'Open_Bid_EURRUB_reg_shifted_4', 'Open_Bid_EURRUB_reg_shifted_5', 'Open_Bid_EURRUB_reg_shifted_10', 'Open_Bid_EURRUB_reg_shifted_20', 'Open_Bid_EURRUB_reg_shifted_30', 'High_Bid_EURRUB_reg_shifted_1', 'High_Bid_EURRUB_reg_shifted_2', 'High_Bid_EURRUB_reg_shifted_3', 'High_Bid_EURRUB_reg_shifted_4', 'High_Bid_EURRUB_reg_shifted_5', 'High_Bid_EURRUB_reg_shifted_10', 'High_Bid_EURRUB_reg_shifted_20', 'High_Bid_EURRUB_reg_shifted_30', 'Low_Bid_EURRUB_reg_shifted_1', 'Low_Bid_EURRUB_reg_shifted_2', 'Low_Bid_EURRUB_reg_shifted_3', 'Low_Bid_EURRUB_reg_shifted_4', 'Low_Bid_EURRUB_reg_shifted_5', 'Low_Bid_EURRUB_reg_shifted_10', 'Low_Bid_EURRUB_reg_shifted_20', 'Low_Bid_EURRUB_reg_shifted_30', 'Close_Bid_EURRUB_reg_shifted_1', 'Close_Bid_EURRUB_reg_shifted_2', 'Close_Bid_EURRUB_reg_shifted_3', 'Close_Bid_EURRUB_reg_shifted_4', 'Close_Bid_EURRUB_reg_shifted_5', 'Close_Bid_EURRUB_reg_shifted_10', 'Close_Bid_EURRUB_reg_shifted_20', 'Close_Bid_EURRUB_reg_shifted_30', 'Volume_Bid_EURRUB_reg_shifted_1', 'Volume_Bid_EURRUB_reg_shifted_2', 'Volume_Bid_EURRUB_reg_shifted_3', 'Volume_Bid_EURRUB_reg_shifted_4', 'Volume_Bid_EURRUB_reg_shifted_5', 'Volume_Bid_EURRUB_reg_shifted_10', 'Volume_Bid_EURRUB_reg_shifted_20', 'Volume_Bid_EURRUB_reg_shifted_30']
+2016-12-27 14:21:13,730 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-27 14:21:30,493 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2016-09-29 12:00:00-2016-09-29 12:30:00]         ticks_to_shift:[1, 2, 3, 4, 5, 10, 20, 30] shift:1
+2016-12-27 14:21:34,604 [INFO ]  Start GridSearchCV...
