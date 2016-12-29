@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 
 def get_classifier_params():
     clf = xgboost.XGBRegressor()
-    params = dict(max_depth=[30],
+    params = dict(max_depth=[12],
                   learning_rate=[0.1],
                   n_estimators=[200],
                   silent=[False],
@@ -95,7 +95,7 @@ def predict(simulator):
                                  index=dataset['label_forecast'])
 
     r2 = model.score(dataset['forecast_X'],
-                     dataset['observed_y'])
+                     dataset['observed_y_retroshifted'])
 
     simulator.r2 = r2
     logging.info('Simulator {0} : R2= {1}'.format(simulator, r2))

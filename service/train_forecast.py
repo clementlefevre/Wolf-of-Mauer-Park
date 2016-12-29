@@ -34,7 +34,8 @@ def train_forecast_split(df, interval):
 
 def add_previous_ticks(df, simulator):
     logging.info('Add previous ticks...')
-    cols_target = [col for col in df.columns.tolist() if (simulator.target_root_name in col and '_reg' in col)]
+    cols_target = [col for col in df.columns.tolist() if (
+        simulator.target_root_name in col and '_reg' in col)]
     cols_others = [col for col in df.columns.tolist() if ('_reg' in col and
                                                           simulator.target_family
                                                           in col)]
@@ -45,7 +46,6 @@ def add_previous_ticks(df, simulator):
         logging.info('Columns with shifted ticks : ')
         logging.info(cols)
 
-
     for col in cols:
         for tick in simulator.ticks_to_shift:
 
@@ -55,6 +55,7 @@ def add_previous_ticks(df, simulator):
 
     return df
 
+
 def set_features(df, simulator):
     logging.info('Set features...')
 
@@ -63,13 +64,13 @@ def clean_features(df, simulator):
     logging.info('Clean features...')
     cols = df.columns.tolist()
 
-    # Keep only calendar columns and regularized features and shifted values 
+    # Keep only calendar columns and regularized features and shifted values
     features_calendar = [col for col in cols if 'cal_' in col]
 
-    features_regularized = [col for col in cols if  ("_reg" in col and
-                                                     simulator.target_root_name not in
-                                                     col and simulator.target_family in
-                                                     col) ]
+    features_regularized = [col for col in cols if ("_reg" in col and
+                                                    simulator.target_root_name not in
+                                                    col and simulator.target_family in
+                                                    col)]
 
     features_shifted = [col for col in cols if '_shifted_' in col]
 
@@ -95,12 +96,15 @@ def create_dataset(df, simulator):
 
     training_df, forecast_df = train_forecast_split(df, simulator.interval)
 
-    # Tracer()()  # this one triggers the debugger
+    Tracer()()  # this one triggers the debugger
 
-    training_df.loc[simulator.target] = training_df[
+    training_df[simulator.target] = training_df[
         simulator.target].shift(periods=-simulator.shift)
 
+    Tracer()()
+
     training_df = training_df[:-simulator.shift]
+    Tracer()()
 
     features_col = clean_features(df, simulator)
 
@@ -112,6 +116,8 @@ def create_dataset(df, simulator):
     X_y_dict['forecast_X'] = forecast_df[features_col].values
 
     X_y_dict['observed_y'] = forecast_df[simulator.target].values
+    X_y_dict['observed_y_retroshifted'] = forecast_df[
+        simulator.target].shift(periods=-simulator.shift).values
 
     X_y_dict['label_training'] = training_df.cal_time.values
     X_y_dict['label_forecast'] = forecast_df.cal_time.values

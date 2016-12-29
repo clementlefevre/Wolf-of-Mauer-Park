@@ -2,3 +2,4 @@
 /data/resampled/*.*
 /data/
 config.py
+/logs/*.*
