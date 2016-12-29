@@ -1,12 +1,13 @@
-import pickle
-import config
 import pandas as pd
 from sklearn.grid_search import GridSearchCV
 import xgboost
 import logging
-
+import warnings
+from service.persistence import pickle_dump, pickle_load
 from service.train_forecast import create_dataset
-from model.models import Prediction
+from IPython.core.debugger import Tracer
+
+warnings.filterwarnings("ignore")
 
 
 def get_classifier_params():
@@ -32,24 +33,27 @@ def get_classifier_params():
     return clf, params
 
 
-def cv_optimize(target, clf, parameters, Xtrain, ytrain, n_folds=5):
+def cv_optimize(simulator, clf, parameters, Xtrain, ytrain, n_folds=5):
     gs = GridSearchCV(clf, param_grid=parameters, cv=n_folds, n_jobs=-1)
     gs.fit(Xtrain, ytrain)
     print "BEST PARAMS", gs.best_params_
     best = gs.best_estimator_
-    pickle.dump(best, open(config.data_store_path +'predictions/model_{}.p'.format(target), "wb"))
+    pickle_dump(best, simulator)
 
 
 def features_weight(simulator):
-    model = pickle.load(
-        open(config.data_store_path +'predictions/model_{}.p'.format(simulator.target), "rb"))
-    dataset = pickle.load(
-        open(config.data_store_path +'predictions/dataset_{}.p'.format(simulator.target), "rb"))
+    model = pickle_load('model', simulator)
+    dataset = pickle_load('dataset', simulator)
 
     df_weights = pd.DataFrame(
         model.booster().get_score().items(), columns=['index', 'weight'])
 
-    df_weights['feature_name'] = dataset['features_names']
+    # the length of features weight from the model is not always the length of total features used
+    # as predictor in the fitting !!!
+    # adjust the features list according to the shape of the model's features
+    # weight list.dataset
+    df_weights['feature_name'] = dataset[
+        'features_names'][:df_weights.shape[0]]
     df_weights = df_weights.sort_values(by='weight', ascending=False)
 
     return df_weights
@@ -59,11 +63,9 @@ def fit_model(dataset, simulator):
     clf, params = get_classifier_params()
     if simulator.fit_model:
         logging.info('Start GridSearchCV...')
-        cv_optimize(simulator.target,
+        cv_optimize(simulator,
                     clf, params, dataset['training_X'], dataset['training_y'])
         logging.info('finished  fitting via GridSearchCV')
-
-
 
 
 def dataset(simulator):
@@ -71,40 +73,35 @@ def dataset(simulator):
                             sep=';', parse_dates=['cal_time'])
 
     dataset = create_dataset(df_source, simulator)
-    pickle.dump(
-        dataset, open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'wb'))
+    pickle_dump(dataset, simulator)
 
 
 def fit(simulator):
     logging.info('Start fitting the model {}'.format(simulator))
     # for each target, fit a model
 
-    dataset = pickle.load(
-        open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'rb'))
+    dataset = pickle_load('dataset', simulator)
     fit_model(dataset, simulator)
     simulator.features_weight = features_weight(simulator)
 
 
 def predict(simulator):
-    model = pickle.load(
-        open(config.data_store_path + 'predictions/model_{}.p'.format(simulator.target), "rb"))
-    dataset = pickle.load(
-        open(config.data_store_path + 'predictions/dataset_{}.p'.format(simulator.target), 'rb'))
+    model = pickle_load('model', simulator)
+    dataset = pickle_load('dataset', simulator)
 
     predictions = model.predict(dataset['forecast_X'])
-    df_prediction = pd.DataFrame({'predicted': predictions, 'observed': dataset['observed_y']},
+    df_prediction = pd.DataFrame({'predicted': predictions,
+                                  'observed': dataset['observed_y']},
                                  index=dataset['label_forecast'])
 
     r2 = model.score(dataset['forecast_X'],
                      dataset['observed_y'])
 
     simulator.r2 = r2
-    logging.info('R2 = {}'.format(r2))
+    logging.info('Simulator {0} : R2= {1}'.format(simulator, r2))
 
     df_prediction.predicted = df_prediction.predicted.shift(
         periods=simulator.shift)
 
-    simulator.predictions = Prediction(
-        df_prediction, simulator.target, simulator.interval, simulator.shift, r2)
-    pickle.dump(simulator, open(
-        config.data_store_path + 'predictions/simulator_{}.p'.format(simulator.target), 'wb'))
+    simulator.predictions = df_prediction
+    pickle_dump(simulator, simulator)

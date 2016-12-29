@@ -3,31 +3,14 @@ Given a date, the Factory splits it into several time intervals.
 For each time interval and each target, the Factory compute a prediction.and
 All the prediction are stored as Prediction object."""
 
-from datetime import datetime, timedelta
+from datetime import datetime
 import logging
-
-
-class Prediction(object):
-
-    def __init__(self, df, serie_name, interval, shift, r2=None):
-        self.df = df
-        self.serie_name = serie_name
-        self.shift = shift
-        self.interval = interval
-        self.r2 = r2
-
-    def __repr__(self):
-        self.interval_str = self.interval['from'].strftime('%Y-%m-%d %H:%M')\
-            + ' to ' +\
-            self.interval['to'].strftime('%Y-%m-%d %H:%M')
-
-        return "{0.serie_name} : {0.shift} : {0.interval_str} :\
-         {0.df.shape[0]}".format(self)
 
 
 class Simulator(object):
 
-    def __init__(self, dt_from=None, dt_to=None, target=None, shift=None, ticks_to_shift=[],
+    def __init__(self, dt_from=None, dt_to=None, target=None, shift=None,
+                 ticks_to_shift=[],
                  fit_model=False, datasource_path=None):
 
         self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
