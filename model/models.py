@@ -11,7 +11,7 @@ class Simulator(object):
 
     def __init__(self, dt_from=None, dt_to=None, target=None, shift=None,
                  ticks_to_shift=[],
-                 fit_model=False, datasource_path=None):
+                 fit_model=False, datasource_path=None, verbose = False):
 
         self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
         self.dt_to = datetime.strptime(dt_to, '%Y-%m-%d %H:%M')
@@ -24,11 +24,18 @@ class Simulator(object):
         self.predictions = None
         self.features_weight = None
         self.r2 = None
+        self.verbose = verbose
+        self._set_target_params()
         logging.info('new Simulator created')
 
     def __repr__(self):
         return "Targets : {0.target} : [{0.dt_from}-{0.dt_to}]\
          ticks_to_shift:{0.ticks_to_shift} shift:{0.shift}".format(self)
+
+    def _set_target_params(self):
+
+        self.target_root_name = self.target.split('_')[2]
+        self.target_family = '_'.join(self.target.split('_')[:2])
 
     def _create_interval(self):
 
