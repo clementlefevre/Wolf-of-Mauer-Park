@@ -2723,3 +2723,14 @@
 2016-12-29 13:46:45,665 [INFO ]  Start GridSearchCV...
 2016-12-29 13:47:58,798 [INFO ]  finished  fitting via GridSearchCV
 2016-12-29 13:47:59,264 [INFO ]  Simulator Targets : Open_Ask_EURRUB : [2011-09-28 12:00:00-2011-09-28 12:30:00]         ticks_to_shift:[0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50] shift:50 : R2= 0.685103076888
+2016-12-29 14:00:08,855 [INFO ]  new Simulator created
+2016-12-29 14:00:08,918 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-29 14:00:09,050 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-29 14:00:09,494 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-28 12:00:00-2011-09-28 12:30:00]         ticks_to_shift:[0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50] shift:3
+2016-12-29 14:00:09,615 [INFO ]  Start GridSearchCV...
+2016-12-29 14:09:38,082 [INFO ]  new Simulator created
+2016-12-29 14:09:38,132 [INFO ]  Start creating the dataset for Open_Ask_EURRUB
+2016-12-29 14:09:38,264 [INFO ]  Finished creating the dataset for Open_Ask_EURRUB
+2016-12-29 14:09:38,729 [INFO ]  Start fitting the model Targets : Open_Ask_EURRUB : [2011-09-28 12:00:00-2011-09-28 12:30:00]         ticks_to_shift:[0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50] shift:3
+2016-12-29 14:09:38,861 [INFO ]  Start GridSearchCV...
+2016-12-29 14:10:40,152 [INFO ]  finished  fitting via GridSearchCV
