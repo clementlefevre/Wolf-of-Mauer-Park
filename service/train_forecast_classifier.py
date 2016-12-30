@@ -35,7 +35,7 @@ def train_forecast_split(df, interval):
 def add_previous_ticks(df, simulator):
     logging.info('Add previous ticks...')
     cols_target = [col for col in df.columns.tolist() if (
-        simulator.target_root_name in col and '_reg' in col)]
+        simulator.target in col and '_reg' in col)]
     cols_others = [col for col in df.columns.tolist() if ('_reg' in col and
                                                           simulator.target_family
                                                           in col)]
@@ -57,7 +57,7 @@ def add_previous_ticks(df, simulator):
 
 
 def add_pip_categories(df, simulator):
-
+    logging.info('Add pip category...')
     def compute_category(row):
         if row.pip_O >= 10:
             return 1

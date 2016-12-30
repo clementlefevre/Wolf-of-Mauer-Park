@@ -10,7 +10,6 @@ import csv
 import datetime
 
 
-datasource_path = '/drive_ext4/merged_no_spread.csv'
 
 cols = ['Open_Ask_EURRUB', 'Open_Ask_USDRUB', 'Open_Ask_USDCAD', 'Open_Ask_LIGHTCMDUSD',
         'Open_Ask_USDMXN', 'Open_Ask_EURNOK', 'Open_Ask_USDNOK', 'Open_Ask_BRENTCMDUSD']
@@ -18,13 +17,15 @@ cols = ['Open_Ask_EURRUB', 'Open_Ask_USDRUB', 'Open_Ask_USDCAD', 'Open_Ask_LIGHT
 
 def compute(targets):
     for target in targets:
-        datasource_path = 'data/merged_no_spread_light.csv'
+        
+        datasource_path = '/drive_ext4/merged_no_spread.csv'
+
         simulator = Simulator(dt_from='2016-10-24 12:00', dt_to='2016-12-1 12:30', target='Open_Ask_USDCAD', shift=3, fit_model=True,
                               datasource_path=datasource_path, clf='classifier', ticks_to_shift=[0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50], verbose=True)
-        regressor.dataset(simulator)
+        #regressor.dataset(simulator)
         regressor.fit(simulator)
         regressor.predict(simulator)
-        print simulator.features_weight[:10]
+        logging.info(simulator.features_weight[:10])
 
 
 if __name__ == '__main__':

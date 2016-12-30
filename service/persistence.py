@@ -5,7 +5,8 @@ Some persistence methods when dealing with long computation times.
 import pickle
 import logging
 from sklearn.base import RegressorMixin
-from xgboost import XGBRegressor
+from xgboost import XGBRegressor,XGBClassifier
+
 import config
 from model.models import Simulator
 
