@@ -4,32 +4,57 @@ import xgboost
 import logging
 import warnings
 from service.persistence import pickle_dump, pickle_load
-from service.train_forecast import create_dataset
+import service.train_forecast_regressor
+import service.train_forecast_classifier
 from IPython.core.debugger import Tracer
 
 warnings.filterwarnings("ignore")
 
 
-def get_classifier_params():
-    clf = xgboost.XGBRegressor()
-    params = dict(max_depth=[12],
-                  learning_rate=[0.1],
-                  n_estimators=[200],
-                  silent=[False],
-                  objective=['reg:linear'],
-                  nthread=[-1],
-                  gamma=[0],
-                  min_child_weight=[1],
-                  max_delta_step=[0],
-                  subsample=[1],
-                  colsample_bytree=[1],
-                  colsample_bylevel=[1],
-                  reg_alpha=[0.2],
-                  reg_lambda=[1],
-                  scale_pos_weight=[1],
-                  base_score=[0.5],
-                  seed=[0],
-                  missing=[None])
+def get_classifier_params(simulator):
+
+    if simulator.clf == 'classifier':
+        clf = xgboost.XGBClassifier()
+        params = dict(max_depth=[7],
+                      learning_rate=[0.1],
+                      n_estimators=[200],
+                      silent=[False],
+                      objective=['binary:logistic'],
+                      nthread=[-1],
+                      gamma=[0],
+                      min_child_weight=[1],
+                      max_delta_step=[0],
+                      subsample=[1],
+                      colsample_bytree=[1],
+                      colsample_bylevel=[1],
+                      reg_alpha=[0.2],
+                      reg_lambda=[1],
+                      scale_pos_weight=[1],
+                      base_score=[0.5],
+                      seed=[0],
+                      missing=[None])
+
+    if simulator.clf == 'regressor':
+        clf = xgboost.XGBRegressor()
+        params = dict(max_depth=[12],
+                      learning_rate=[0.1],
+                      n_estimators=[200],
+                      silent=[False],
+                      objective=['reg:linear'],
+                      nthread=[-1],
+                      gamma=[0],
+                      min_child_weight=[1],
+                      max_delta_step=[0],
+                      subsample=[1],
+                      colsample_bytree=[1],
+                      colsample_bylevel=[1],
+                      reg_alpha=[0.2],
+                      reg_lambda=[1],
+                      scale_pos_weight=[1],
+                      base_score=[0.5],
+                      seed=[0],
+                      missing=[None])
+
     return clf, params
 
 
@@ -60,7 +85,7 @@ def features_weight(simulator):
 
 
 def fit_model(dataset, simulator):
-    clf, params = get_classifier_params()
+    clf, params = get_classifier_params(simulator)
     if simulator.fit_model:
         logging.info('Start GridSearchCV...')
         cv_optimize(simulator,
@@ -72,7 +97,12 @@ def dataset(simulator):
     df_source = pd.read_csv(simulator.datasource_path,
                             sep=';', parse_dates=['cal_time'])
 
-    dataset = create_dataset(df_source, simulator)
+    if simulator.clf == 'regressor':
+        dataset = service.train_forecast_regressor.create_dataset(
+            df_source, simulator)
+    if simulator.clf == 'classifier':
+        dataset = service.train_forecast_classifier.create_dataset(
+            df_source, simulator)
     pickle_dump(dataset, simulator)
 
 
@@ -93,12 +123,13 @@ def predict(simulator):
     df_prediction = pd.DataFrame({'predicted': predictions,
                                   'observed': dataset['observed_y']},
                                  index=dataset['label_forecast'])
-
-    r2 = model.score(dataset['forecast_X'],
-                     dataset['observed_y_retroshifted'])
-
-    simulator.r2 = r2
-    logging.info('Simulator {0} : R2= {1}'.format(simulator, r2))
+    try:
+        r2 = model.score(dataset['forecast_X'],
+                         dataset['observed_y_retroshifted'])
+        simulator.r2 = r2
+        logging.info('Simulator {0} : R2= {1}'.format(simulator, r2))
+    except Exception as e:
+        logging.error('Could not compute R2 : {}'.format(e))
 
     df_prediction.predicted = df_prediction.predicted.shift(
         periods=simulator.shift)

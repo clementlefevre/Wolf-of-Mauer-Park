@@ -56,6 +56,25 @@ def add_previous_ticks(df, simulator):
     return df
 
 
+def add_pip_categories(df, simulator):
+
+    def compute_category(row):
+        if row.pip_O >= 10:
+            return 1
+        if row.pip_O <= -10:
+            return 2
+        else:
+            return 0
+
+    df['target_shifted'] = df[simulator.target].shift(periods=3)
+
+    df['pip_O'] = (df[simulator.target] - df['target_shifted']) * 10000
+
+    df['pip_category'] = df.apply(compute_category, axis=1)
+
+    return df
+
+
 def set_features(df, simulator):
     logging.info('Set features...')
 
@@ -91,33 +110,31 @@ def create_dataset(df, simulator):
     logging.info('Start creating the dataset for {}'.format(simulator.target))
 
     df = add_previous_ticks(df, simulator)
+    df = add_pip_categories(df, simulator)
 
     X_y_dict = {}
 
     training_df, forecast_df = train_forecast_split(df, simulator.interval)
 
-    Tracer()()  # this one triggers the debugger
+    #Tracer()()  # this one triggers the debugger
 
     training_df[simulator.target] = training_df[
         simulator.target].shift(periods=-simulator.shift)
 
-    Tracer()()
-
     training_df = training_df[:-simulator.shift]
-    Tracer()()
 
     features_col = clean_features(df, simulator)
 
     X_y_dict['training_X'] = training_df[
         features_col].values
 
-    X_y_dict['training_y'] = training_df[simulator.target].values
+    X_y_dict['training_y'] = training_df['pip_category'].values
 
     X_y_dict['forecast_X'] = forecast_df[features_col].values
 
-    X_y_dict['observed_y'] = forecast_df[simulator.target].values
+    X_y_dict['observed_y'] = forecast_df['pip_category'].values
     X_y_dict['observed_y_retroshifted'] = forecast_df[
-        simulator.target].shift(periods=-simulator.shift).values
+        'pip_category'].shift(periods=-simulator.shift).values
 
     X_y_dict['label_training'] = training_df.cal_time.values
     X_y_dict['label_forecast'] = forecast_df.cal_time.values

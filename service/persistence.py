@@ -15,7 +15,7 @@ def _get_label(object_):
     if isinstance(object_, dict):
         return 'dataset'
     if isinstance(object_, RegressorMixin) or \
-            isinstance(object_, XGBRegressor):
+            isinstance(object_, XGBRegressor) or isinstance(object_, XGBClassifier):
         return 'model'
     if isinstance(object_, Simulator):
         return 'simulator'
