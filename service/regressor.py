@@ -14,25 +14,28 @@ warnings.filterwarnings("ignore")
 def get_classifier_params(simulator):
 
     if simulator.clf == 'classifier':
+
         clf = xgboost.XGBClassifier()
-        params = dict(max_depth=[7],
-                      learning_rate=[0.1],
-                      n_estimators=[200],
-                      silent=[False],
-                      objective=['binary:logistic'],
-                      nthread=[-1],
-                      gamma=[0],
-                      min_child_weight=[1],
-                      max_delta_step=[0],
-                      subsample=[1],
-                      colsample_bytree=[1],
-                      colsample_bylevel=[1],
-                      reg_alpha=[0.2],
-                      reg_lambda=[1],
-                      scale_pos_weight=[1],
-                      base_score=[0.5],
-                      seed=[0],
-                      missing=[None])
+        # params = dict(max_depth=[7],
+        #               learning_rate=[0.1],
+        #               n_estimators=[50],
+        #               silent=[False],
+        #               objective=['multi:softprob'],
+        #               nthread=[-1],
+        #               gamma=[0],
+        #               min_child_weight=[1],
+        #               max_delta_step=[0],
+        #               subsample=[1],
+        #               colsample_bytree=[1],
+        #               colsample_bylevel=[1],
+        #               reg_alpha=[0.2],
+        #               reg_lambda=[1],
+        #               num_class=[3],
+        #               scale_pos_weight=[1],
+        #               base_score=[0.5],
+        #               seed=[0],
+        #               missing=[None])
+        params = dict(objective=['binary:logistic'], max_depth=[7])
 
     if simulator.clf == 'regressor':
         clf = xgboost.XGBRegressor()

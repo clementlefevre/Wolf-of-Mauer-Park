@@ -35,8 +35,8 @@ def train_forecast_split(df, interval):
 def add_previous_ticks(df, simulator):
     logging.info('Add previous ticks...')
     cols_target = [col for col in df.columns.tolist() if (
-        simulator.target in col and '_reg' in col)]
-    cols_others = [col for col in df.columns.tolist() if ('_reg' in col and
+        simulator.target in col and '_reg' not in col)]
+    cols_others = [col for col in df.columns.tolist() if ('_reg' not in col and
                                                           simulator.target_family
                                                           in col)]
 
@@ -61,12 +61,11 @@ def add_pip_categories(df, simulator):
     def compute_category(row):
         if row.pip_O >= 10:
             return 1
-        if row.pip_O <= -10:
-            return 2
+
         else:
             return 0
 
-    df['target_shifted'] = df[simulator.target].shift(periods=3)
+    df['target_shifted'] = df[simulator.target].shift(periods=simulator.shift)
 
     df['pip_O'] = (df[simulator.target] - df['target_shifted']) * 10000
 
@@ -83,17 +82,18 @@ def clean_features(df, simulator):
     logging.info('Clean features...')
     cols = df.columns.tolist()
 
-    # Keep only calendar columns and regularized features and shifted values
+    # Keep only calendar columns and not regularized features and shifted
+    # values
     features_calendar = [col for col in cols if 'cal_' in col]
 
-    features_regularized = [col for col in cols if ("_reg" in col and
-                                                    simulator.target_root_name not in
-                                                    col and simulator.target_family in
-                                                    col)]
+    features_not_regularized = [col for col in cols if ("_reg" not in col and
+                                                        simulator.target_root_name not in
+                                                        col and simulator.target_family in
+                                                        col)]
 
     features_shifted = [col for col in cols if '_shifted_' in col]
 
-    features_col = set(features_calendar + features_regularized +
+    features_col = set(features_calendar + features_not_regularized +
                        features_shifted)
 
     # Time index is not a feature
@@ -116,7 +116,7 @@ def create_dataset(df, simulator):
 
     training_df, forecast_df = train_forecast_split(df, simulator.interval)
 
-    #Tracer()()  # this one triggers the debugger
+    # Tracer()()  # this one triggers the debugger
 
     training_df[simulator.target] = training_df[
         simulator.target].shift(periods=-simulator.shift)
@@ -124,6 +124,8 @@ def create_dataset(df, simulator):
     training_df = training_df[:-simulator.shift]
 
     features_col = clean_features(df, simulator)
+
+    training_df.to_csv('data/predictions/dataset_test.csv', sep=';')
 
     X_y_dict['training_X'] = training_df[
         features_col].values

@@ -1,14 +1,7 @@
-import os
-import pandas as pd
+
 import logging
 from model.models import Simulator
 import service.regressor as regressor
-import pickle
-
-import service.files_service as fs
-import csv
-import datetime
-
 
 
 cols = ['Open_Ask_EURRUB', 'Open_Ask_USDRUB', 'Open_Ask_USDCAD', 'Open_Ask_LIGHTCMDUSD',
@@ -17,12 +10,12 @@ cols = ['Open_Ask_EURRUB', 'Open_Ask_USDRUB', 'Open_Ask_USDCAD', 'Open_Ask_LIGHT
 
 def compute(targets):
     for target in targets:
-        
-        datasource_path = '/drive_ext4/merged_no_spread.csv'
 
-        simulator = Simulator(dt_from='2016-10-24 12:00', dt_to='2016-12-1 12:30', target='Open_Ask_USDCAD', shift=3, fit_model=True,
-                              datasource_path=datasource_path, clf='classifier', ticks_to_shift=[0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50], verbose=True)
-        #regressor.dataset(simulator)
+        datasource_path = 'data/merged_no_spread_light_Ask_Open_only.csv'
+
+        simulator = Simulator(dt_from='2016-10-24 12:00', dt_to='2016-12-1 12:30', target='Open_Ask_USDCAD', shift=10, fit_model=True,
+                              datasource_path=datasource_path, clf='classifier', ticks_to_shift=[1, 5, 10, 20, 50], verbose=True)
+        regressor.dataset(simulator)
         regressor.fit(simulator)
         regressor.predict(simulator)
         logging.info(simulator.features_weight[:10])
