@@ -35,8 +35,8 @@ def train_forecast_split(df, interval):
 def add_previous_ticks(df, simulator):
     logging.info('Add previous ticks...')
     cols_target = [col for col in df.columns.tolist() if (
-        simulator.target in col and '_reg' not in col)]
-    cols_others = [col for col in df.columns.tolist() if ('_reg' not in col and
+        simulator.target in col and '_reg' in col)]
+    cols_others = [col for col in df.columns.tolist() if ('_reg' in col and
                                                           simulator.target_family
                                                           in col)]
 
@@ -86,14 +86,14 @@ def clean_features(df, simulator):
     # values
     features_calendar = [col for col in cols if 'cal_' in col]
 
-    features_not_regularized = [col for col in cols if ("_reg" not in col and
-                                                        simulator.target_root_name not in
-                                                        col and simulator.target_family in
-                                                        col)]
+    features_regularized = [col for col in cols if ('_reg' in col and
+                                                    simulator.target_root_name not in
+                                                    col and simulator.target_family in
+                                                    col)]
 
     features_shifted = [col for col in cols if '_shifted_' in col]
 
-    features_col = set(features_calendar + features_not_regularized +
+    features_col = set(features_calendar + features_regularized +
                        features_shifted)
 
     # Time index is not a feature

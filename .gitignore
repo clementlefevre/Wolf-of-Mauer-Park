@@ -3,3 +3,4 @@
 /data/
 config.py
 /logs/*.*
+.Rproj.user

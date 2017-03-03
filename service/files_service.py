@@ -12,10 +12,10 @@ import logging
 LAG = 10
 
 
-def _get_files(folder=None, extension=None, as_dict=False):
+def _get_files(folder=None, extension=None, as_dict=False, filter_on=''):
 
     files = [filo for filo in os.listdir(
-        folder) if extension in filo]
+                    folder) if extension in filo and filter_on in filo ]
 
     if as_dict:
         files_dict = {}
