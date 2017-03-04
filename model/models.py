@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 import logging
-from service.trade_analysis import KELCH, DONCH, ATR, EMA, plot_candlestick
+from service.trade_analysis import KELCH, DONCH, ATR, EMA, candlestick_prop, plot_candlestick
 
 
 class Simulator(object):
@@ -62,6 +62,7 @@ class TradeModel(object):
         self.dayfirst = dayfirst
         self.datetime_col = datetime_col
         self.df = self._get_df(file_path)
+        self.add_properties()
 
     def _get_df(self, file_path):
         df = pd.read_csv(
@@ -74,6 +75,7 @@ class TradeModel(object):
         self.df = DONCH(self.df, self.n)
         self.df = ATR(self.df)
         self.df = EMA(self.df)
+        self.df = candlestick_prop(self.df)
 
     def plot(self):
         df = self.df
