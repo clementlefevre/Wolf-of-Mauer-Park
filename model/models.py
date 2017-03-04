@@ -3,15 +3,21 @@ Given a date, the Factory splits it into several time intervals.
 For each time interval and each target, the Factory compute a prediction.and
 All the prediction are stored as Prediction object."""
 
+import pandas as pd
 from datetime import datetime
+import matplotlib.pyplot as plt
 import logging
+from service.trade_analysis import KELCH, DONCH, ATR, EMA, plot_candlestick
 
 
 class Simulator(object):
 
     def __init__(self, dt_from=None, dt_to=None, target=None, shift=None,
                  ticks_to_shift=[],
-                 fit_model=False, clf=None, datasource_path=None, verbose=False):
+                 fit_model=False,
+                 clf=None,
+                 datasource_path=None,
+                 verbose=False):
 
         self.dt_from = datetime.strptime(dt_from, '%Y-%m-%d %H:%M')
         self.dt_to = datetime.strptime(dt_to, '%Y-%m-%d %H:%M')
@@ -43,3 +49,42 @@ class Simulator(object):
         interval = {'from': self.dt_from, 'to': self.dt_to}
 
         return interval
+
+
+class TradeModel(object):
+
+    def __init__(self, file_path, name, frequency='D',
+                 datetime_col='Time (UTC)', sep=';', n=3, dayfirst=True):
+        self.file_path = file_path
+        self.frequency = frequency
+        self.name = name
+        self.n = n
+        self.dayfirst = dayfirst
+        self.datetime_col = datetime_col
+        self.df = self._get_df(file_path)
+
+    def _get_df(self, file_path):
+        df = pd.read_csv(
+            file_path, parse_dates=[self.datetime_col], dayfirst=self.dayfirst)
+        df = df.set_index(self.datetime_col)
+        return df
+
+    def add_properties(self):
+        self.df = KELCH(self.df, self.n)
+        self.df = DONCH(self.df, self.n)
+        self.df = ATR(self.df)
+        self.df = EMA(self.df)
+
+    def plot(self):
+        df = self.df
+        ax = plot_candlestick(df, self.name)
+        df[['EMA12', 'EMA30', 'KC_M_' + str(self.n)]].plot(
+            legend=True, style=['-', '-', '-', '--'], linewidth=1, ax=ax)
+
+        plt.fill_between(df.index, df['KC_D_' + str(self.n)], df['KC_U_' + str(self.n)],
+                         facecolor='red', alpha=0.1, interpolate=True)
+        df[['Donchian_High_' + str(self.n), 'Donchian_Low_' + str(self.n)]].plot(
+            style=':', linewidth=1, ax=ax, color='r')
+
+        df.ATR.plot(secondary_y=True, style='y', linewidth=1)
+        ax.legend(loc='lower center', ncol=3, bbox_to_anchor=(.5, 1.0))
