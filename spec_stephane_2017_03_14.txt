@@ -1,0 +1,35 @@
+Mar 15
+
+- creer le predicteur pour chacun des timeframes (30mn - 1H - 4H - 1D/ repertoires stephane_fresh
+- utiliser le modele pour predire un max de perte qui soit 2 fois inferieur au profit.
+- A chaque fin de chandelle (4h ou 1h) , faire une prediction pour :
+
+
+- si la chandelle qui se termine est negative (cad close<open) :
+- probabilite que le LOW de la prochaine chandelle soit au moins 20 points plus bas que le CLOSE de la chandelle qui s'est terminee.
+- probabilite que le HIGH del la prochaine chandelle soit maximum 18 pips au dessus du CLOSE
+
+
+- si la chandelle qui se termine est positive (cad open<close) :
+- probabilite que le HIGH de la prochaine chandelle soit au moins 20 points plus haut que le CLOSE de la chandelle qui s'est terminee.
+- probabilite que le LOW soit max 18 pips en dessous du CLOSE
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Mar 17 
+
+J'avais pensé que nous pouvons faire comme cela...
+
+faire un programme dans dukas qui nous donne les données (les données passées et les temps réel).
+On utilise ton programme qui ajoute les MA, keltner et autre info sur ces données (on pourrais même faire tout dans le programme dans Dukas)
+On entraîne le prédicteur avec un set de données (généré au point ci-dessus) avec des dates dans le passé comme (01 jan 2010 à 31 Dec 2016)
+Lorsque nous testons la validité du modèle, on refais step 1 et 2 avec des données de Jan 2017 à maintenant.
+
+L'avantage de cela c'est que c'est très claire et facile à comprendre (pour moi :-) ) et il y auras moins de fichiers à traiter. En plus, cela va aller plus rapidement lorsque nous allons commencer en vrai... ON peu faire d'autre chose dans dukas aussi. On pourrais donner au prédicteur pour chaque chandelle au minutes 2 valeurs boolean qui indique si cela aurais été un bon trade ou pas (goodShortTrade, goodLongTrade)... On peu faire du code qui fais assemblant d'ouvrir une pos à tout les fins de minute et qui monitor si le trade aurais fait +x pips avant de perdre -y pips  (x/y >= 2). On peu faire un class pour cela... Met les tout les donées en mémoires à la fin de chaque minute et monitor ensuite si la pos aurais été bonne ou pas bonne. On écrit dans le fichier les lignes qui sont finis en ordre (dans le temps)...  
+
+Tu comprend un peu mon idée?
+
+Je suis en ligne si tu veux parler (si tu as le temps)...
+
+------------------------------------------------------------------------------------------------------------------------------------

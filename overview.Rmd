@@ -1,0 +1,104 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    keep_md: true
+---
+
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(caret)
+library(lubridate)
+library(ROCR)
+library(xgboost)
+```
+
+```{r}
+df<-read.csv('tradeModel_data.csv')
+df$date<- ymd_hms(df$Time..UTC.)
+df$month <- as.factor(month(df$date))
+df$weekday <- as.factor(wday(df$date))
+df$hour <- hour(df$date)
+df <- df%>% select(-contains('UTC'))
+
+str(df)
+```
+Split dataset
+```{r}
+df_DOWN <- df %>% filter(cs_body_size>0) %>% select(-contains('next')) 
+
+df_DOWN$target <- df %>% filter(cs_body_size>0) %>% .$DOWN_next_Low_under_Close
+str(df_DOWN$target)
+
+
+df_train<- df_DOWN %>% filter(date<'2016-09-01')
+df_test <- df_DOWN %>% filter(date>='2016-09-01')
+
+
+lm <- glm (target ~ .-date,data=df_train,family = binomial)
+summary(lm)
+```
+
+```{r}
+lm2<-glm(target~Open+High+Low+High+KC_M_1+KC_U_1+ATR+EMA12+EMA30+hour,family = binomial, data = df_train)
+prediction <- predict(lm2,newdata=df_test,type='response')
+CM<- table(df_test$target,prediction>0.5)
+CM
+
+```
+```{r}
+# Prediction function
+ROCRpred = prediction(prediction, df_test$target)
+
+auc.tmp <- performance(ROCRpred,"auc"); auc <- as.numeric(auc.tmp@y.values)
+auc
+
+# Performance function
+ROCRperf = performance(ROCRpred, "tpr", "fpr")
+
+
+# Add threshold labels 
+plot(ROCRperf, colorize=TRUE, print.cutoffs.at=seq(0,1,by=0.1), text.adj=c(-0.2,1.7))
+```
+XGBOOST
+```{r}
+
+X_train <- df_train %>% select(-one_of(c("target","date","month","weekday"))) %>% as.matrix()
+y_train <- df_train %>% select(target)%>% as.matrix()
+                               
+                               
+X_test <- df_test %>% select(-one_of(c("target","date","month","weekday"))) %>% as.matrix()
+y_test <- df_test %>% select(target%>% as.matrix()
+                               
+                               
+                               )
+bst <- xgboost(data = X_train, label = y_train, 
+               max_depth = 20, eta = 1, nthread = -1, nrounds = 2, 
+               objective = "binary:logistic")
+
+
+prediction_xgboost <- predict(bst, X_test)
+
+```
+```{r}
+# Prediction function
+ROCRpred = prediction(prediction_xgboost, df_test$target)
+
+auc.tmp <- performance(ROCRpred,"auc"); auc <- as.numeric(auc.tmp@y.values)
+auc
+
+# Performance function
+ROCRperf = performance(ROCRpred, "tpr", "fpr")
+
+
+# Add threshold labels 
+plot(ROCRperf, colorize=TRUE, print.cutoffs.at=seq(0,1,by=0.1), text.adj=c(-0.2,1.7))
+```
+```{r}
+result<-cbind(prediction_xgboost>0.5, df_test$target)
+result
+```
+
+

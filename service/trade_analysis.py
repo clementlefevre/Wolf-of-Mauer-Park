@@ -8,13 +8,14 @@ import talib
 
 # Keltner Channel
 def KELCH(df, n):
+    for n in range(1, n + 1):
 
-    df['KC_M_' + str(n)] = df[['High', 'Low', 'Close']
-                              ].mean(axis=1).rolling(3).mean()
-    df['KC_U_' + str(n)] = ((4 * df['High'] - 2 * df['Low'] +
-                             df['Close']) / 3).rolling(3).mean()
-    df['KC_D_' + str(n)] = ((-2 * df['High'] + 4 * df['Low'] +
-                             df['Close']) / 3).rolling(3).mean()
+        df['KC_M_' + str(n)] = df[['High', 'Low', 'Close']
+                                  ].mean(axis=1).rolling(3).mean()
+        df['KC_U_' + str(n)] = ((4 * df['High'] - 2 * df['Low'] +
+                                 df['Close']) / 3).rolling(3).mean()
+        df['KC_D_' + str(n)] = ((-2 * df['High'] + 4 * df['Low'] +
+                                 df['Close']) / 3).rolling(3).mean()
 
     return df
 
@@ -36,6 +37,11 @@ def EMA(df):
     df['EMA12'] = talib.EMA(df.Open.values, timeperiod=12)
     df['EMA30'] = talib.EMA(df.Open.values, timeperiod=30)
     return df
+
+
+def pip_delta(df, col1, col2, pip_threshold):
+
+    return np.where((df[col1] - df[col2]) * 10000.0 > pip_threshold, 1, 0)
 
 
 def candlestick_prop(df):

@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 import logging
-from service.trade_analysis import KELCH, DONCH, ATR, EMA, candlestick_prop, plot_candlestick
+from service.trade_analysis import KELCH, DONCH, ATR, EMA, candlestick_prop, plot_candlestick, pip_delta
 
 
 class Simulator(object):
@@ -68,6 +68,7 @@ class TradeModel(object):
         df = pd.read_csv(
             file_path, parse_dates=[self.datetime_col], dayfirst=self.dayfirst)
         df = df.set_index(self.datetime_col)
+        df.index.name = 'date_time'
         return df
 
     def add_properties(self):
@@ -76,6 +77,42 @@ class TradeModel(object):
         self.df = ATR(self.df)
         self.df = EMA(self.df)
         self.df = candlestick_prop(self.df)
+        self.shift_candlestick()
+        self.add_trend_parameters()
+        self.add_hour()
+
+    def shift_candlestick(self):
+        self.df['next_Low'] = self.df['Low'].shift(-1)
+        self.df['next_High'] = self.df['High'].shift(-1)
+        self.df['next_Close'] = self.df['Close'].shift(-1)
+
+    def add_trend_parameters(self):
+        self.df['DOWN_next_Low_under_Close'] = pip_delta(
+            self.df, 'Close', 'next_Low', 20)
+
+        self.df['DOWN_next_High_over_Close'] = pip_delta(
+            self.df, 'Close', 'next_High', 18)
+
+        self.df[
+            'UP_next_High_over_Close'] = pip_delta(self.df, 'next_High', 'Close', 20)
+
+        self.df[
+            'UP_next_Low_under_Close'] = pip_delta(self.df, 'Close', 'next_Low', 18)
+
+    def add_hour(self):
+        self.df['hour'] = self.df.index.hour
+
+    def get_predictors_columns(self):
+        return [col for col in self.df.columns.tolist() if 'next' not in col]
+
+    def filter_on_trend(self, target):
+        if 'DOWN' in target:
+            return self.df[self.df.cs_body_size > 0]
+        if 'UP' in target:
+            return self.df[self.df.cs_body_size < 0]
+        else:
+            ValueError(
+                'Oh no ! neither keyword DOWN nor UP are in the target name.')
 
     def plot(self):
         df = self.df

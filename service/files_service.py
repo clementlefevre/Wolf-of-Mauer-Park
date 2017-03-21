@@ -12,10 +12,10 @@ import logging
 LAG = 10
 
 
-def _get_files(folder=None, extension=None, as_dict=False, filter_on=''):
+def get_files(folder=None, extension=None, as_dict=False, filter_on=''):
 
     files = [filo for filo in os.listdir(
-                    folder) if extension in filo and filter_on in filo ]
+        folder) if extension in filo and filter_on in filo]
 
     if as_dict:
         files_dict = {}
@@ -30,7 +30,7 @@ def _get_files(folder=None, extension=None, as_dict=False, filter_on=''):
 
 def merge_ask_bid(source_folder=None):
     files_dict = {}
-    files = _get_files(folder=source_folder, extension='.csv')
+    files = get_files(folder=source_folder, extension='.csv')
     files = sorted(files)
 
     if not os.path.exists(source_folder + '/ask_bid'):
@@ -94,7 +94,7 @@ def _transform(df, resample=None):
 
 
 def _transform_folder(source_folder=None):
-    files = _get_files(folder=source_folder, extension='.csv')
+    files = get_files(folder=source_folder, extension='.csv')
     path = source_folder + '/'
     if not os.path.exists(path + 'transformed'):
         os.makedirs(path + 'transformed')
@@ -129,14 +129,14 @@ def _add_ewma(df):
 
 
 def _chunk_and_resample_folder(resample=None, source_folder=None):
-    files_dict = _get_files(folder=source_folder,
-                            extension='csv', as_dict=False)
+    files_dict = get_files(folder=source_folder,
+                           extension='csv', as_dict=False)
     for file_name, file_path in files_dict.iteritems():
         _chunk_and_resample(file_path=file_path, resample=resample)
 
 
 def _merge_files(source_folder=None, resample=None, filter_on=None):
-    files_to_merge = _get_files(folder=source_folder, extension='.csv')
+    files_to_merge = get_files(folder=source_folder, extension='.csv')
 
     df_all = pd.DataFrame()
 
@@ -190,7 +190,7 @@ def _remove_absolute_columns(df):
 
 
 def _remove_null(df, source_folder=None):
-    index_names = _get_files(
+    index_names = get_files(
         folder=source_folder, extension='csv')
     print index_names
     for index in index_names:
