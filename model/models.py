@@ -3,6 +3,7 @@ Given a date, the Factory splits it into several time intervals.
 For each time interval and each target, the Factory compute a prediction.and
 All the prediction are stored as Prediction object."""
 
+import numpy as np
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
@@ -79,7 +80,7 @@ class TradeModel(object):
         self.df = candlestick_prop(self.df)
         self.shift_candlestick()
         self.add_trend_parameters()
-        self.add_hour()
+        self.add_calendar_params()
 
     def shift_candlestick(self):
         self.df['next_Low'] = self.df['Low'].shift(-1)
@@ -99,20 +100,20 @@ class TradeModel(object):
         self.df[
             'UP_next_Low_under_Close'] = pip_delta(self.df, 'Close', 'next_Low', 18)
 
-    def add_hour(self):
+        self.df['DOWN_next_Low_and_High'] = self.df[
+            'DOWN_next_Low_under_Close'] * self.df['DOWN_next_High_over_Close']
+
+        self.df['UP_next_Low_and_High'] = self.df[
+            'UP_next_Low_under_Close'] * self.df['UP_next_High_over_Close']
+
+    def add_calendar_params(self):
         self.df['hour'] = self.df.index.hour
+        self.df['day'] = self.df.index.weekday
+        self.df['month'] = self.df.index.month
+        self.df['year'] = self.df.index.year
 
     def get_predictors_columns(self):
         return [col for col in self.df.columns.tolist() if 'next' not in col]
-
-    def filter_on_trend(self, target):
-        if 'DOWN' in target:
-            return self.df[self.df.cs_body_size > 0]
-        if 'UP' in target:
-            return self.df[self.df.cs_body_size < 0]
-        else:
-            ValueError(
-                'Oh no ! neither keyword DOWN nor UP are in the target name.')
 
     def plot(self):
         df = self.df
