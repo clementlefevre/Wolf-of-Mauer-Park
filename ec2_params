@@ -1,4 +1,14 @@
-when restarting instance, ssh -i ~/.ssh/ubuntu_c3x4.pem ubuntu@ec2-35-156-209-66xxxxxxxxx
+Connect to AWS instance :
+ssh -i ~/.ssh/aws_north_california.pem ubuntu@ec2-35-156-209-66xxxxxxxxx
+
+Copy file to instance :
+ scp -i ~/.ssh/aws_north_california.pem  file_path ubuntu@ec2-35-156-209-66xxxxxxxxx:~
+
+Connect to jupyter :
+https://ec2-54-193-55-236.us-west-1.compute.amazonaws.com:8888
+
+
+when restarting instance, ssh -i ~/.ssh/aws_north_california.pem ubuntu@ec2-35-156-209-66xxxxxxxxx
 
 
 then in the root folder :
